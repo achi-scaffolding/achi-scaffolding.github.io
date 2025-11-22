@@ -1,92 +1,45 @@
-// js/clients-slider.js
 (function() {
   const track = document.querySelector(".clients-slider .slide-track");
-  if (!track) return;
-
   const slides = Array.from(track.querySelectorAll(".client-logo"));
-  const dotsContainer = document.querySelector(".home-clients .slider-dots");
+  const slideCount = slides.length;
 
-  // if no slides or single slide, do nothing
-  if (slides.length <= 1) {
-    dotsContainer.style.display = "none";
-    return;
-  }
-
-  // create dots
-  slides.forEach((_, i) => {
-    const d = document.createElement("button");
-    d.className = (i === 0 ? "dot active" : "dot");
-    d.setAttribute("aria-label", `Go to client ${i + 1}`);
-    d.dataset.index = i;
-    dotsContainer.appendChild(d);
+  // Duplicate slides for seamless looping
+  slides.forEach(slide => {
+    const clone = slide.cloneNode(true);
+    track.appendChild(clone);
   });
 
-  const dots = Array.from(dotsContainer.querySelectorAll(".dot"));
+  const slideWidth = slides[0].offsetWidth + parseFloat(getComputedStyle(slides[0]).marginRight);
+  let position = 0;
+  const speed = 0.5; // pixels per frame
+  let requestId;
 
-  // compute slide width (distance to move per step)
-  function getSlideStep() {
-    const computedStyle = window.getComputedStyle(slides[0]);
-    const marginRight = parseFloat(computedStyle.marginRight) || 0;
-    return Math.round(slides[0].offsetWidth + marginRight);
+  function animate() {
+    position += speed;
+    if (position >= slideWidth * slideCount) position -= slideWidth * slideCount;
+    track.style.transform = `translateX(-${position}px)`;
+    requestId = requestAnimationFrame(animate);
   }
 
-  let index = 0;
-  let intervalId = null;
-  const AUTOPLAY_MS = 2500;
+  // Start the loop
+  animate();
 
-  function goTo(i) {
-    const step = getSlideStep();
-    track.style.transform = `translateX(-${i * step}px)`;
-    dots.forEach(d => d.classList.remove("active"));
-    if (dots[i]) dots[i].classList.add("active");
-    index = i;
-  }
-
-  function next() {
-    index = (index + 1) % slides.length;
-    goTo(index);
-  }
-
-  function startAuto() {
-    stopAuto();
-    intervalId = setInterval(next, AUTOPLAY_MS);
-  }
-
-  function stopAuto() {
-    if (intervalId) {
-      clearInterval(intervalId);
-      intervalId = null;
-    }
-  }
-
-  // dot click handlers
-  dots.forEach(d => {
-    d.addEventListener("click", () => {
-      const i = parseInt(d.dataset.index, 10);
-      goTo(i);
-      startAuto(); // restart timer
-    });
+  // Arrow buttons
+  document.querySelector(".clients-slider .arrow.next").addEventListener("click", () => {
+    position += slideWidth;
+    if (position >= slideWidth * slideCount) position -= slideWidth * slideCount;
+    track.style.transform = `translateX(-${position}px)`;
   });
 
-  // pause on hover/focus
-  const slider = document.querySelector(".clients-slider");
-  slider.addEventListener("mouseenter", stopAuto);
-  slider.addEventListener("mouseleave", startAuto);
-  slider.addEventListener("focusin", stopAuto);
-  slider.addEventListener("focusout", startAuto);
+  document.querySelector(".clients-slider .arrow.prev").addEventListener("click", () => {
+    position -= slideWidth;
+    if (position < 0) position += slideWidth * slideCount;
+    track.style.transform = `translateX(-${position}px)`;
+  });
 
-  // recompute on resize
-  let resizeTimer;
+  // Update slideWidth on resize
   window.addEventListener("resize", () => {
-    // small debounce
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(() => {
-      goTo(index); // reapply transform using recalculated step
-    }, 120);
+    const newWidth = slides[0].offsetWidth + parseFloat(getComputedStyle(slides[0]).marginRight);
+    if (newWidth !== slideWidth) location.reload(); // simple fix
   });
-
-  // initialize
-  track.style.transition = "transform 0.6s cubic-bezier(.2,.9,.2,1)";
-  track.style.willChange = "transform";
-  startAuto();
 })();
