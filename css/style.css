@@ -168,30 +168,400 @@ body{
 .why-card i{font-size:28px;color:var(--accent);margin-bottom:8px;display:block}
 .why-card h3{font-family:"Rajdhani",sans-serif;font-size:18px;color:var(--blue-700);margin:8px 0}
 
-.home-blog{background:var(--bg-odd)}
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.blog-card{display:flex;gap:14px;background:#fff;border-radius:8px;padding:16px;box-shadow:0 10px 24px rgba(0,0,0,.06)}
-.blog-date{min-width:52px;background:var(--blue-700);color:#fff;border-radius:8px;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:6px 0}
-.blog-date .day{font-family:"Rajdhani",sans-serif;font-size:20px;font-weight:700}
-.blog-body h3{font-family:"Rajdhani",sans-serif;font-size:16px;color:var(--blue-700);margin:0 0 6px}
-.blog-body p{font-size:13px;color:var(--muted);margin:0 0 8px}
-.blog-link{font-size:13px;color:var(--accent);text-decoration:none;font-weight:600}
-.blog-link:hover{text-decoration:underline}
+/* ==== BLOG SECTION (clone of original) ==== */
 
-/* CONTACT CTA */
-.home-contact-cta{background-color:var(--blue-700);color:#fff}
-.contact-cta-inner{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,2fr);gap:30px;align-items:center;max-width:var(--max-container);margin:0 auto;padding:40px 0}
-.contact-cta-text h2{font-family:"Rajdhani",sans-serif;font-size:26px;margin:0 0 8px}
-.contact-cta-form input,.contact-cta-form textarea{width:100%;border-radius:8px;border:none;padding:9px 10px;font-size:13px}
+.home-blog {
+  background: #ffffff;
+  padding-top: 120px; /* matches big top spacing on live site */
+}
 
-/* FOOTER basics */
-.site-footer{background:#102033;color:#fff;padding:40px 0}
-.footer-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;width:90%;max-width:var(--max-container);margin:0 auto}
-.footer-col h4{margin:0 0 10px;font-size:16px}
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-/* Utilities */
-.text-center{text-align:center}
+/* title "BLOG" */
+.blog-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #003A80;
+  font-family: "Saira Stencil One", "Saira Stencil", "Rajdhani", sans-serif;
+  font-size: 35px;
+  line-height: 36.4px;
+  font-weight: 400;
+  margin: 0 0 40px;
+}
 
+/* GRID LAYOUT */
+.blog-grid-achi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+/* card wrapper */
+.blog-card-achi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  margin-top: -30px; /* pulls card up under big title like original */
+  position: relative;
+}
+
+/* date badge */
+.blog-date-badge {
+  background: #2B529C;
+  border-radius: 10px;
+  text-align: center;
+  padding: 7px 20px;
+  position: relative;
+  top: 65px;
+  left: -13px;
+  z-index: 2;
+}
+
+.blog-date-badge .day,
+.blog-date-badge .month {
+  color: #ffffff;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.blog-date-badge .day {
+  font-weight: 600;
+}
+
+.blog-date-badge .month {
+  font-weight: 400;
+}
+
+/* image */
+.blog-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 17px;
+  display: block;
+}
+
+/* title + text */
+.blog-card-title {
+  font-size: 18px;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  color: #003A80;
+  margin: 12px 0;
+  text-transform: none;
+}
+
+.blog-card-text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #003A80;
+  font-family: "Saira", "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* READ MORE link row */
+.blog-readmore-link {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-readmore-link span {
+  font-family: "Saira", "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #003A80;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.blog-readmore-link .arrow-shape {
+  fill: #28509E;
+  transition: fill 0.3s ease;
+}
+
+/* hover: orange text + orange arrow */
+.blog-card-achi:hover .blog-readmore-link span {
+  color: #ff8e26;
+}
+
+.blog-card-achi:hover .blog-readmore-link .arrow-shape {
+  fill: #ff8e26;
+}
+
+.blog-card-achi:hover .blog-card-title {
+  color: #ff8e26;
+}
+
+/* READ ALL BUTTON */
+.blog-readall-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.blog-readall-btn {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 12px 55px;
+  background: #28509E;
+  border-radius: 12px;
+  text-transform: uppercase;
+  border: 2px solid #28509E;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.blog-readall-btn:hover {
+  background: transparent;
+  color: #28509E;
+}
+
+/* RESPONSIVE GRID like original: 1 / 2 / 3 columns */
+@media (min-width: 768px) {
+  .blog-grid-achi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .blog-grid-achi {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+/* ========== CONTACT CTA (LET'S TALK) ========== */
+.home-contact-cta {
+  background-color: #28509E;      /* same blue as real site */
+  color: #fff;
+  margin-top: 100px;
+}
+
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 45px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* left column */
+.contact-form-wrapper {
+  flex: 1 1 60%;
+}
+
+/* mobile title ("Start your project now") */
+.contact-mobile-title {
+  font-family: "Saira Stencil One", sans-serif;
+  text-transform: uppercase;
+  font-size: 35px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+
+/* form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #FFFFFFCC;
+  font-size: 15px;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 170px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #65778e;
+}
+
+/* button */
+.contact-submit {
+  margin-top: 20px;
+  background: #FF8E26;
+  border: 2px solid #FF8E26;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+  max-width: 230px;
+}
+
+.contact-submit:hover {
+  background: transparent;
+}
+
+/* right column – LET'S TALK! */
+.contact-side-heading {
+  flex: 0 0 40%;
+  padding-top: 125px;
+  display: none;        /* hidden on mobile, shown on desktop */
+}
+
+.contact-side-heading h3 {
+  font-family: "Saira Stencil One", sans-serif;
+  text-transform: uppercase;
+  font-size: 45px;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* responsive contact */
+@media (min-width: 992px) {
+  .contact-mobile-title {
+    display: none;
+  }
+
+  .contact-side-heading {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-inner {
+    flex-direction: column;
+  }
+}
+
+/* FOOTER */
+.site-footer {
+  background: #28509E;
+  color: #fff;
+  padding: 40px 0 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* now 4 equal columns */
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* logo */
+.footer-brand .site-logo {
+  max-width: 180px;
+  height: auto;
+}
+
+/* headings */
+.footer-col h4,
+.footer-col .follow-title {
+  font-family: "Saira Stencil One", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+/* list formatting */
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+}
+
+.footer-col a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #FF8E26;
+}
+
+.footer-contact li i {
+  margin-right: 8px;
+}
+
+/* social icons */
+.footer-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social a i {
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.footer-social a:hover i {
+  color: #FF8E26;
+}
+/* Remove gap between contact CTA and footer */
+.home-contact-cta {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.site-footer {
+    margin-top: 0 !important;
+    padding-top: 40px; /* keep the original padding, only remove margin */
+}
+
+
+/* responsive */
+@media (max-width: 900px) {
+  .footer-inner {
+    grid-template-columns: 1fr 1fr; /* 2 columns on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
 
 /* ===== Why Choose Us slider styles (append) ===== */
 #WhychoseUs {
