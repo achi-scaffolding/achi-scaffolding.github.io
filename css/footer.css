@@ -1,0 +1,96 @@
+/* ============================================================
+   FOOTER.CSS — GLOBAL FOOTER STYLES ONLY
+============================================================ */
+
+.site-footer {
+    background: #28509e;
+    color: #fff;
+    padding: 40px 0 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 0;
+}
+
+/* Footer layout */
+.footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Logo column */
+.footer-brand .site-logo {
+    max-width: 180px;
+    height: auto;
+}
+
+/* Headings */
+.footer-col h4,
+.footer-col .follow-title {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+/* Lists */
+.footer-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+    font-family: "Saira", sans-serif;
+    font-size: 16px;
+}
+
+/* Links */
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #ff8e26;
+}
+
+/* Contact icons spacing */
+.footer-contact li i {
+    margin-right: 8px;
+}
+
+/* Social icons row */
+.footer-social {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-social a i {
+    font-size: 18px;
+    transition: 0.2s ease;
+}
+
+.footer-social a:hover i {
+    color: #ff8e26;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 992px) {
+    .footer-inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+    }
+}

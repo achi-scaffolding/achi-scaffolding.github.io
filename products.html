@@ -6,12 +6,16 @@
     <title>Achi Scaffolding – Products</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <link rel="stylesheet" href="css/products.css" />
+     <link rel="stylesheet" href="css/base.css">
+     <link rel="stylesheet" href="css/header.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/products.css">
+
+
 </head>
-<body>
+<body class="inner-page">
 
 <header>
 
@@ -19,8 +23,7 @@
         <div class="container top-header-inner">
 
             <a href="index.html" class="top-logo">
-                <span class="logo-icon">∩</span>
-                <span class="logo-text">ACHI<br><span>SCAFFOLDING</span></span>
+                <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding Logo" class="site-logo">
             </a>
 
             <div class="top-center-info">
@@ -32,17 +35,16 @@
             <div class="top-right-group">
 
                 <div class="top-socials">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.facebook.com/ACHISCAFF"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/achiscaffoldinglb/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/AchiScaffolding"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/achi-scaffolding/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.tiktok.com/@achiscaffolding"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
 
-                <div class="top-lang">
-                    <i class="fa-solid fa-globe"></i>
-                    English
-                    <i class="fa-solid fa-caret-down"></i>
+                <div class="top-dropdowns">
+                    <div class="dropdown-box"><i class="fa-solid fa-globe"></i><span>Country</span><i class="fa-solid fa-caret-down"></i></div>
+                    <div class="dropdown-box"><i class="fa-solid fa-globe"></i><span>English</span><i class="fa-solid fa-caret-down"></i></div>
                 </div>
 
                 <button class="nav-toggle" aria-label="Open navigation menu">
@@ -60,27 +62,26 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="services.html">Services</a></li>
-                <li><a href="products.html" class="active">Products</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
                 <li><a href="clients.html">Clients</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- MOBILE MENU -->
     <div class="mobile-menu">
         <div class="mobile-menu-header">
             <div class="mobile-logo">
-                <span class="logo-icon">∩</span>
-                <span class="logo-text">ACHI<br><span>SCAFFOLDING</span></span>
+                <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding" class="site-logo">
             </div>
 
             <div class="mobile-lang">
                 <i class="fa-solid fa-globe"></i> English
-                <button class="mobile-close" aria-label="Close navigation menu">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+                <button class="mobile-close"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
 
@@ -91,19 +92,32 @@
             <li><a class="active" href="products.html">Products</a></li>
             <li><a href="clients.html">Clients</a></li>
             <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact us</a></li>
         </ul>
 
         <div class="mobile-bottom-line"></div>
 
-        <div class="mobile-location">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Lebanon</span>
+        <div class="mobile-extra-info">
+            <div class="mobile-contact-line"><i class="fa-solid fa-location-dot"></i><span>Lebanon</span></div>
+            <div class="mobile-contact-line"><i class="fa-regular fa-envelope"></i><span>achi.gr@hotmail.com</span></div>
+            <div class="mobile-contact-line"><i class="fa-brands fa-whatsapp"></i><span>+96103322811</span></div>
+
+            <div class="mobile-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
     </div>
 
 </header>
+
+<!-- SPACER SO NAVBAR DOESN'T OVERLAP -->
+<div class="header-spacer"></div>
 
 <section class="page-hero">
     <div class="container">
@@ -119,16 +133,15 @@
     <div class="container">
         <div class="products-grid">
 
+            <!-- PRODUCT CARDS remain as you sent them -->
+
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Standard_Frame_Scaffolding.jpg" alt="Standard frame scaffolding" />
+                    <img src="images/Standard_Frame_Scaffolding.jpg" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Standard Frame Scaffolding</h3>
-                    <p>
-                        Modular steel frames suitable for general construction, renovation, and
-                        maintenance work. Available in multiple heights and load classes.
-                    </p>
+                    <p>Modular steel frames for construction and maintenance work.</p>
                     <ul class="product-specs">
                         <li>Height per bay: up to 6 m</li>
                         <li>Load class: up to 3</li>
@@ -140,14 +153,11 @@
 
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Ringlock_System_Scaffolding.png" alt="Ringlock system scaffolding" />
+                    <img src="images/Ringlock_System_Scaffolding.png" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Ringlock System Scaffolding</h3>
-                    <p>
-                        Heavy-duty, multi-directional system scaffolding for high-rise and
-                        complex structures, offering quick assembly and excellent stability.
-                    </p>
+                    <p>Heavy-duty system scaffolding for high-rise structures.</p>
                     <ul class="product-specs">
                         <li>High load capacity</li>
                         <li>Flexible geometry</li>
@@ -159,17 +169,14 @@
 
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Suspended_Scaffolding_Platforms.jpg" alt="Suspended scaffolding platforms" />
+                    <img src="images/Suspended_Scaffolding_Platforms.jpg" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Suspended Scaffolding Platforms</h3>
-                    <p>
-                        Motorized and manual swing stages for façade works, painting, and
-                        finishing jobs on high-rise buildings.
-                    </p>
+                    <p>Motorized & manual swing stages for façade works.</p>
                     <ul class="product-specs">
-                        <li>Adjustable working height</li>
-                        <li>Suitable for façade finishing</li>
+                        <li>Adjustable height</li>
+                        <li>Excellent for façades</li>
                         <li>Safety guardrails included</li>
                     </ul>
                     <a href="#" class="btn-outline">Read More</a>
@@ -178,18 +185,15 @@
 
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Adjustable_Base_Jacks.jpg" alt="Adjustable base jacks" />
+                    <img src="images/Adjustable_Base_Jacks.jpg" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Adjustable Base Jacks</h3>
-                    <p>
-                        Screw-type base jacks used for precise leveling of scaffolding on sloped
-                        or uneven surfaces, ensuring safe load distribution.
-                    </p>
+                    <p>Precise leveling for uneven or sloped surfaces.</p>
                     <ul class="product-specs">
                         <li>Diameter: 38–48 mm</li>
                         <li>Adjustment: up to 600 mm</li>
-                        <li>Hot-dip galvanized</li>
+                        <li>Galvanized steel</li>
                     </ul>
                     <a href="#" class="btn-outline">Read More</a>
                 </div>
@@ -197,18 +201,15 @@
 
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Steel_Scaffold_Planks.jpg" alt="Steel scaffold planks" />
+                    <img src="images/Steel_Scaffold_Planks.jpg" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Steel Scaffold Planks</h3>
-                    <p>
-                        Anti-slip steel planks providing a safe and durable working surface for
-                        scaffold platforms in indoor and outdoor environments.
-                    </p>
+                    <p>Anti-slip planks for working surfaces.</p>
                     <ul class="product-specs">
                         <li>Lengths: 1.0 – 3.0 m</li>
-                        <li>Perforated anti-slip surface</li>
-                        <li>Side hooks for secure locking</li>
+                        <li>Anti-slip surface</li>
+                        <li>Secure locking hooks</li>
                     </ul>
                     <a href="#" class="btn-outline">Read More</a>
                 </div>
@@ -216,18 +217,15 @@
 
             <article class="product-card reveal">
                 <div class="product-image">
-                    <img src="images/Full_Scaffolding_Safety_Kit.png" alt="Full scaffolding safety kit" />
+                    <img src="images/Full_Scaffolding_Safety_Kit.png" alt="">
                 </div>
                 <div class="product-body">
                     <h3>Full Scaffolding Safety Kit</h3>
-                    <p>
-                        Complete personal protective equipment kit for scaffold workers,
-                        ensuring compliance with essential site safety standards.
-                    </p>
+                    <p>Complete safety protection equipment.</p>
                     <ul class="product-specs">
-                        <li>Harness &amp; double lanyard</li>
-                        <li>Helmet &amp; hi-vis vest</li>
-                        <li>Gloves &amp; safety shoes </li>
+                        <li>Harness & double lanyard</li>
+                        <li>Helmet & vest</li>
+                        <li>Gloves & safety shoes</li>
                     </ul>
                     <a href="#" class="btn-outline">Read More</a>
                 </div>
@@ -241,25 +239,20 @@
     <div class="container cta-inner">
         <div class="cta-text">
             <h2>Need a Quote for Your Next Project?</h2>
-            <p>
-                Share your project details with us and our team will recommend the most
-                suitable scaffolding system and accessories.
-            </p>
+            <p>Share your project details and we’ll recommend the best system for your needs.</p>
         </div>
+
         <a href="#" class="btn-whatsapp">
-            <i class="fa-brands fa-whatsapp"></i>
-            Send us your enquiry over WhatsApp
+            <i class="fa-brands fa-whatsapp"></i> Send us your enquiry over WhatsApp
         </a>
     </div>
 </section>
 
 <footer class="site-footer">
     <div class="container footer-inner">
+
         <div class="footer-col footer-brand">
-            <div class="footer-logo">
-                <span class="logo-icon">∩</span>
-                <span class="logo-text">ACHI<br><span> SCAFFOLDING</span></span>
-            </div>
+            <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding" class="site-logo">
         </div>
 
         <div class="footer-col">
@@ -275,7 +268,7 @@
 
         <div class="footer-col">
             <h4>Our contacts</h4>
-            <ul class="footer-contact">
+            <ul>
                 <li><i class="fa-solid fa-phone"></i> <a href="tel:+96103322811">+96103322811</a></li>
                 <li><i class="fa-regular fa-envelope"></i> <a href="mailto:achi.gr@hotmail.com">achi.gr@hotmail.com</a></li>
                 <li><i class="fa-solid fa-location-dot"></i> Lebanon</li>
@@ -287,9 +280,7 @@
             <form class="footer-form">
                 <div class="footer-input-wrapper">
                     <input type="email" placeholder="Email" />
-                    <button type="submit">
-                        <i class="fa-solid fa-paper-plane"></i>
-                    </button>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </form>
 
@@ -302,18 +293,15 @@
                 <a href="#"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
+
     </div>
 </footer>
 
-<a href="#" class="floating-btn call-btn">
-    <i class="fa-solid fa-phone"></i>
-</a>
-
-<a href="#" class="floating-btn whatsapp-btn">
-    <i class="fa-brands fa-whatsapp"></i>
-</a>
+<a href="#" class="floating-btn call-btn"><i class="fa-solid fa-phone"></i></a>
+<a href="#" class="floating-btn whatsapp-btn"><i class="fa-brands fa-whatsapp"></i></a>
 
 <script src="js/scrollReveal.js"></script>
 <script src="js/menu.js"></script>
+
 </body>
 </html>

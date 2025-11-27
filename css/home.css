@@ -1,0 +1,400 @@
+/* ============================================================
+   HOME.CSS — SECTIONS USED ONLY ON HOME PAGE
+============================================================ */
+
+/* ------------------------------------------------------------
+   HERO SLIDER
+------------------------------------------------------------ */
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    min-height: 420px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20%;
+    left: 8%;
+    max-width: 540px;
+    color: #fff;
+    padding: 20px;
+    background: linear-gradient(
+        120deg,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.05)
+    );
+    border-radius: 10px;
+}
+
+.slide-content h1 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.slide-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #28509e;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #25d366;
+    border-color: #25d366;
+}
+
+.hero-slider .slider-dots {
+    position: absolute;
+    bottom: 22px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 5;
+}
+
+.hero-slider .dot {
+    width: 11px;
+    height: 11px;
+    background: rgba(255,255,255,0.55);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hero-slider .dot.active {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------------------------
+   SERVICES SECTION
+------------------------------------------------------------ */
+.home-services {
+    padding-top: 70px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.service-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.service-card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s, filter .35s;
+}
+
+.service-card-img-wrapper:hover img {
+    transform: scale(1.06);
+    filter: brightness(1.08);
+}
+
+.service-card-img-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 55%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        rgba(255,255,255,0),
+        rgba(255,255,255,.45),
+        rgba(255,255,255,0)
+    );
+    transform: skewX(-18deg);
+}
+
+.service-card-img-wrapper:hover::after {
+    animation: shine .6s forwards;
+}
+
+@keyframes shine {
+    0% { left: -100%; }
+    100% { left: 120%; }
+}
+
+.service-card-title {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--blue-700);
+    margin-top: 14px;
+    transition: color .25s;
+}
+
+.service-box:hover .service-card-title {
+    color: var(--accent);
+}
+
+/* ------------------------------------------------------------
+   HOME ABOUT SECTION
+------------------------------------------------------------ */
+.home-about {
+    width: 100%;
+    margin: 0;
+}
+/* Prevent conflicts with About page */
+.home-page .home-about {
+    padding: 0;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-image {
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-panel {
+    background-color: var(--blue-800);
+    color: #fff;
+    padding: 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.about-panel h2 {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 72px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.about-panel p {
+    max-width: 640px;
+    color: rgba(255,255,255,.92);
+    margin-top: 20px;
+}
+
+.about-panel::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 64px;
+    right: 24px;
+    top: 30px;
+    background: #1b3a73;
+}
+
+/* ------------------------------------------------------------
+   CLIENTS SLIDER
+------------------------------------------------------------ */
+.clients-slider {
+    position: relative;
+}
+
+.slide-track-wrapper {
+    overflow: hidden;
+}
+
+.slide-track {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.client-logo {
+    width: 140px;
+    height: 84px;
+    object-fit: contain;
+    margin: 0 36px;
+}
+
+/* ------------------------------------------------------------
+   WHY CHOOSE US
+------------------------------------------------------------ */
+#WhychoseUs {
+    padding: 40px 0 80px;
+    background-image: url("../images/firstBgSlide.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+#WhychoseUs::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.25);
+}
+
+.wc-title {
+    text-align: center;
+    font-family: "Saira Stencil", sans-serif;
+    font-size: 36px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.why-slider-wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.why-card {
+    background: rgba(0,32,74,.48);
+    border-radius: 20px;
+    padding: 24px;
+    min-height: 260px;
+    margin: 10px;
+}
+
+.why-card img.icon {
+    width: 60px;
+}
+
+/* ------------------------------------------------------------
+   TESTIMONIALS
+------------------------------------------------------------ */
+#testimonials {
+    padding: 80px 0 90px;
+    background: #fff;
+    position: relative;
+}
+
+#testimonials .testimonials-title {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 62px;
+    color: #003a80;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 25px 60px rgba(0,0,0,.12);
+    padding: 45px 45px 55px;
+}
+
+/* ------------------------------------------------------------
+   BLOG SUMMARY BOXES
+------------------------------------------------------------ */
+.home-blog {
+    background: #fff;
+    padding-top: 120px;
+}
+
+/* ------------------------------------------------------------
+   CONTACT CTA
+------------------------------------------------------------ */
+.home-contact-cta {
+    background-color: #28509e;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.contact-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 45px 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,.6);
+    color: #fff;
+}
+
+.contact-submit {
+    margin-top: 20px;
+    background: #ff8e26;
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 50%;
+}
+
+/* ------------------------------------------------------------
+   RESPONSIVE FIXES
+------------------------------------------------------------ */
+
+@media (max-width: 992px) {
+    .services-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-slider {
+        height: 65vh;
+    }
+    .slide-content h1 {
+        font-size: 24px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

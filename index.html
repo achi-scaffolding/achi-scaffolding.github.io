@@ -15,28 +15,35 @@
   <!-- Slick carousel CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
 
-    <link rel="stylesheet" href="css/products.css" />
-    <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/footer.css">
+
 </head>
-<body>
+<body class="home-page">
+
 
 <header>
 
+    <!-- TOP BLUE BAR -->
     <div class="top-header">
         <div class="container top-header-inner">
 
-          <a href="index.html" class="top-logo">
-             <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding Logo" class="site-logo">
-          </a>
+            <!-- LOGO -->
+            <a href="index.html" class="top-logo">
+                <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding Logo" class="site-logo">
+            </a>
 
-
+            <!-- CENTER INFO (desktop only) -->
             <div class="top-center-info">
                 <span><i class="fa-solid fa-location-dot"></i> Lebanon</span>
                 <span><i class="fa-regular fa-envelope"></i> achi.gr@hotmail.com</span>
                 <span><i class="fa-brands fa-whatsapp"></i> +96103322811</span>
             </div>
 
+            <!-- RIGHT GROUP (socials + dropdowns) -->
             <div class="top-right-group">
 
                 <div class="top-socials">
@@ -45,35 +52,33 @@
                     <a href="https://x.com/AchiScaffolding"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="https://www.linkedin.com/company/achi-scaffolding/"><i class="fa-brands fa-linkedin-in"></i></a>
                     <a href="https://www.tiktok.com/@achiscaffolding"><i class="fa-brands fa-tiktok"></i></a>
-            
                 </div>
 
-               <div class="top-dropdowns">
+                <div class="top-dropdowns">
+                    <div class="top-country dropdown-box">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>Country</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
 
-    <div class="top-country dropdown-box">
-        <i class="fa-solid fa-globe"></i>
-        <span>Country</span>
-        <i class="fa-solid fa-caret-down"></i>
-    </div>
-
-    <div class="top-lang dropdown-box">
-        <i class="fa-solid fa-globe"></i>
-        <span>English</span>
-        <i class="fa-solid fa-caret-down"></i>
-    </div>
-
-</div>
-
-
-                <button class="nav-toggle" aria-label="Open navigation menu">
-                    <span></span><span></span><span></span>
-                </button>
+                    <div class="top-lang dropdown-box">
+                        <i class="fa-solid fa-globe"></i>
+                        <span>English</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
 
             </div>
+
+            <!-- 💥 BURGER ICON — OUTSIDE top-right-group -->
+            <button class="nav-toggle" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </button>
 
         </div>
     </div>
 
+    <!-- NAVIGATION BAR -->
     <nav class="main-nav">
         <div class="container nav-inner">
             <ul class="nav-links">
@@ -83,69 +88,74 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="clients.html">Clients</a></li>
                 <li><a href="projects.html">Projects</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
         </div>
     </nav>
-<div class="mobile-menu">
-    <div class="mobile-menu-header">
-        <div class="mobile-logo">
-            <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding Logo" class="site-logo">
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+
+            <div class="mobile-logo">
+                <img src="images/ArchiScaffoldinglogo.png" alt="Achi Scaffolding Logo" class="site-logo">
+            </div>
+
+            <div class="mobile-lang">
+                <i class="fa-solid fa-globe"></i> English
+                <button class="mobile-close" aria-label="Close navigation menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
         </div>
 
-        <div class="mobile-lang">
-            <i class="fa-solid fa-globe"></i> English
-            <button class="mobile-close" aria-label="Close navigation menu">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+        <nav class="main-nav">
+            <div class="nav-inner">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="mobile-bottom-line"></div>
+
+        <div class="mobile-extra-info">
+            <div class="mobile-contact-line">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Lebanon</span>
+            </div>
+
+            <div class="mobile-contact-line">
+                <i class="fa-regular fa-envelope"></i>
+                <span>achi.gr@hotmail.com</span>
+            </div>
+
+            <div class="mobile-contact-line">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>+96103322811</span>
+            </div>
+
+            <div class="mobile-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
         </div>
+
     </div>
-<nav class="main-nav">
-    <div class="nav-inner">
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </div>
-</nav>
-
-
-    <div class="mobile-bottom-line"></div>
-
-    <!-- ADDED CONTACT INFO HERE -->
-    <div class="mobile-extra-info">
-        <div class="mobile-contact-line">
-            <i class="fa-solid fa-location-dot"></i>
-            <span>Lebanon</span>
-        </div>
-
-        <div class="mobile-contact-line">
-            <i class="fa-regular fa-envelope"></i>
-            <span>achi.gr@hotmail.com</span>
-        </div>
-
-        <div class="mobile-contact-line">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>+96103322811</span>
-        </div>
-
-        <div class="mobile-socials">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </div>
-</div>
-
 
 </header>
 
@@ -699,6 +709,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="js/why-slider.js"></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function () {
+    document.querySelector('.mobile-menu').classList.add('open');
+});
+
+document.querySelector('.mobile-close').addEventListener('click', function () {
+    document.querySelector('.mobile-menu').classList.remove('open');
+});
+</script>
+
 
 <script src="js/clients-slider.js"></script>
 </body>
