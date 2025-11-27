@@ -373,6 +373,129 @@
     padding: 10px 30px;
     width: 50%;
 }
+/* =============================
+   TESTIMONIALS — FINAL VERSION
+============================== */
+
+#testimonials {
+    padding: 100px 0;
+    background: #fff;
+    position: relative;
+}
+
+.testimonials-title {
+    text-align: center;
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 48px;
+    color: #003a80;
+    margin-bottom: 60px;
+}
+
+/* ---- SLIDER AREA ---- */
+.testimonials-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.testi-track-wrapper {
+    overflow: hidden;
+}
+
+.testi-track {
+    display: flex;
+    gap: 40px;
+    transition: transform 0.6s ease;
+    will-change: transform;
+}
+
+/* ---- 3 cards visible ---- */
+.testimonial-item {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    opacity: 0.45;
+    transform: translateY(0);
+    transition: all .4s ease;
+}
+
+/* ---- CENTER CARD POP-UP ---- */
+.testimonial-item.center {
+    transform: translateY(-35px) scale(1.08);
+    opacity: 1;
+    z-index: 5;
+}
+
+/* ---- CARD STYLE ---- */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px 30px;
+    min-height: 240px;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.testimonial-quote-circle {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    color: #143a80;
+    margin: -55px auto 20px;
+}
+
+.testimonial-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #1b3155;
+}
+
+.testimonial-name {
+    margin-top: 16px;
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #214f9b;
+}
+
+/* ---- DOTS (ONLY ONE ROW) ---- */
+.testi-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.testi-dots li {
+    width: 10px;
+    height: 10px;
+    list-style: none;
+    background: #d3dae6;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .2s ease;
+}
+
+.testi-dots li.active {
+    background: #ff8a00;
+}
+
+/* MOBILE — only one card */
+@media (max-width: 992px) {
+    .testimonial-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
 
 /* ------------------------------------------------------------
    RESPONSIVE FIXES

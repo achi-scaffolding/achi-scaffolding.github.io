@@ -1,48 +1,73 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".testi-track");
+    const original = Array.from(document.querySelectorAll(".testimonial-item"));
+    const dots = document.querySelectorAll(".testi-dots li");
 
-    const items = Array.from(document.querySelectorAll("#testimonials .testimonial-item"));
-    const dots = Array.from(document.querySelectorAll("#testimonials .testi-dots li"));
+    // visible=3 → real center = middle element (index 1 inside the visible frame)
+    let index = 3; // after cloning, this will be the true middle element
+    let auto;
 
-    if (!items.length) return;
+    // Clone for perfect infinite loop
+    const clonesBefore = original.slice(-3).map(item => item.cloneNode(true));
+    const clonesAfter = original.slice(0, 3).map(item => item.cloneNode(true));
 
-    let currentIndex = 0;
+    clonesBefore.forEach(cl => track.prepend(cl));
+    clonesAfter.forEach(cl => track.append(cl));
 
-    function normalize(i) {
-        if (i < 0) return items.length - 1;
-        if (i >= items.length) return 0;
-        return i;
+    const all = Array.from(document.querySelectorAll(".testimonial-item"));
+    let slideWidth = 0;
+
+    function updateSizes() {
+        slideWidth = all[0].offsetWidth + 40;
+        track.style.transition = "none";
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
     }
 
-    function update() {
-        const left = normalize(currentIndex - 1);
-        const right = normalize(currentIndex + 1);
+    function setCenter() {
+        all.forEach(s => s.classList.remove("center"));
 
-        items.forEach((el, idx) => {
-            el.classList.remove("is-center", "is-left", "is-right", "is-hidden");
-            if (idx === currentIndex) el.classList.add("is-center");
-            else if (idx === left) el.classList.add("is-left");
-            else if (idx === right) el.classList.add("is-right");
-            else el.classList.add("is-hidden");
-        });
+        // middle of visible is always index
+        all[index].classList.add("center");
 
-        dots.forEach((d,i) => d.classList.toggle("active", i === currentIndex));
+        dots.forEach(d => d.classList.remove("active"));
+
+        const realDot = (index - 3 + original.length) % original.length;
+        dots[realDot].classList.add("active");
     }
 
-    function next() {
-        currentIndex = normalize(currentIndex + 1);
-        update();
+    function moveToNext() {
+        index++;
+        track.style.transition = "0.6s ease";
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+
+        setTimeout(() => {
+            if (index >= all.length - 3) {
+                track.style.transition = "none";
+                index = 3;
+                track.style.transform = `translateX(-${slideWidth * index}px)`;
+            }
+            setCenter();
+        }, 620);
     }
 
-    // Dots click
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            currentIndex = i;
-            update();
+    function moveToDot(i) {
+        index = i + 3;
+        track.style.transition = "0.6s ease";
+        track.style.transform = `translateX(-${slideWidth * index}px)`;
+        setCenter();
+    }
+
+    dots.forEach(d => {
+        d.addEventListener("click", () => {
+            clearInterval(auto);
+            moveToDot(Number(d.dataset.index));
+            auto = setInterval(moveToNext, 3000);
         });
     });
 
-    // autoplay
-    setInterval(next, 6000);
+    updateSizes();
+    setCenter();
+    window.addEventListener("resize", updateSizes);
 
-    update();
+    auto = setInterval(moveToNext, 3000);
 });
