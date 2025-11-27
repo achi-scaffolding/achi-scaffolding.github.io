@@ -331,14 +331,179 @@
     box-shadow: 0 25px 60px rgba(0,0,0,.12);
     padding: 45px 45px 55px;
 }
+/* ===========================
+   BLOG
+   =========================== */
 
-/* ------------------------------------------------------------
-   BLOG SUMMARY BOXES
------------------------------------------------------------- */
 .home-blog {
-    background: #fff;
-    padding-top: 120px;
+  background: #ffffff;
+  padding-top: 120px;
 }
+
+.blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #003a80;
+  font-family: "Saira Stencil One", "Saira Stencil", "Rajdhani", sans-serif;
+  font-size: 35px;
+  line-height: 36.4px;
+  font-weight: 400;
+  margin: 0 0 40px;
+}
+
+.blog-grid-achi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.blog-card-achi {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  margin-top: -30px;
+  position: relative;
+}
+
+.blog-date-badge {
+  background: #2b529c;
+  border-radius: 10px;
+  text-align: center;
+  padding: 7px 20px;
+  position: relative;
+  top: 65px;
+  left: -13px;
+  z-index: 2;
+}
+
+.blog-date-badge .day,
+.blog-date-badge .month {
+  color: #ffffff;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+.blog-date-badge .day {
+  font-weight: 600;
+}
+
+.blog-date-badge .month {
+  font-weight: 400;
+}
+
+.blog-image {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-radius: 17px;
+  display: block;
+}
+
+.blog-card-title {
+  font-size: 18px;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  color: #003a80;
+  margin: 12px 0;
+}
+
+.blog-card-text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #003a80;
+  font-family: "Saira", "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+.blog-readmore-link {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 17px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blog-readmore-link span {
+  font-family: "Saira", "Rajdhani", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #003a80;
+  font-size: 18px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.blog-readmore-link .arrow-shape {
+  fill: #28509e;
+  transition: fill 0.3s ease;
+}
+
+.blog-card-achi:hover .blog-readmore-link span {
+  color: #ff8e26;
+}
+
+.blog-card-achi:hover .blog-readmore-link .arrow-shape {
+  fill: #ff8e26;
+}
+
+.blog-card-achi:hover .blog-card-title {
+  color: #ff8e26;
+}
+
+.blog-readall-wrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.blog-readall-btn {
+  font-size: 15px;
+  color: #ffffff;
+  font-family: "Saira", "Rajdhani", sans-serif;
+  font-weight: 700;
+  line-height: 29px;
+  padding: 12px 55px;
+  background: #28509e;
+  border-radius: 12px;
+  text-transform: uppercase;
+  border: 2px solid #28509e;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.blog-readall-btn:hover {
+  background: transparent;
+  color: #28509e;
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 992px) {
+  .blog-grid-achi {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 991px) {
+  .blog-grid-achi {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 
 /* ------------------------------------------------------------
    CONTACT CTA
