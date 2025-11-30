@@ -1,3 +1,6 @@
+
+
+                                             /*it s a draft , not linked to html but i want to keep it for now*/
 :root {
   --blue-700: #214f9b;
   --blue-800: #274f9f;
@@ -42,9 +45,7 @@ body {
   background-color: var(--bg-even);
 }
 
-/* ===========================
-   HEADER TOP BAR (DESKTOP)
-   =========================== */
+
 
 .top-header {
   width: 100%;
@@ -68,7 +69,6 @@ body {
   object-fit: contain;
 }
 
-/* CENTER CONTACT INFO */
 
 .top-center-info {
   display: flex;
@@ -85,7 +85,6 @@ body {
   color: #ffffff;
 }
 
-/* RIGHT SIDE: SOCIALS + DROPDOWNS */
 
 .top-right-group {
   display: flex;
@@ -93,7 +92,6 @@ body {
   gap: 50px;
 }
 
-/* SOCIAL ICONS */
 
 .top-socials {
   display: flex;
@@ -111,7 +109,6 @@ body {
   color: #f2f2f2;
 }
 
-/* COUNTRY + LANGUAGE DROPDOWNS */
 
 .top-dropdowns {
   display: flex;
@@ -147,9 +144,7 @@ body {
   color: #ff8a00;
 }
 
-/* ===========================
-   SECTION HEADER + BUTTONS
-   =========================== */
+
 
 .section-header {
   text-align: center;
@@ -214,10 +209,6 @@ body {
   background: var(--blue-700);
   color: #fff;
 }
-
-/* ===========================
-   HERO SLIDER
-   =========================== */
 
 .hero-slider {
   position: relative;
@@ -330,9 +321,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ===========================
-   MAIN NAV (DESKTOP)
-   =========================== */
+
 
 .main-nav {
   position: absolute;
@@ -381,15 +370,11 @@ body {
   padding-bottom: 4px;
 }
 
-/* ensure hero is behind navbar */
 .hero-slider {
   position: relative;
   z-index: 1;
 }
 
-/* ===========================
-   SERVICES
-   =========================== */
 
 .home-services {
   padding-top: 70px;
@@ -502,9 +487,7 @@ body {
   color: var(--accent);
 }
 
-/* ===========================
-   ABOUT
-   =========================== */
+
 
 .home-about {
   width: 100%;
@@ -582,9 +565,7 @@ body {
   top: 30px;
 }
 
-/* ===========================
-   CLIENTS SLIDER
-   =========================== */
+
 
 .home-clients {
   background: #ffffff;
@@ -648,9 +629,7 @@ body {
   transform: translateY(-50%) scale(1.1);
 }
 
-/* ===========================
-   WHY CHOOSE US
-   =========================== */
+
 
 #WhychoseUs {
   padding: 40px 0 80px;
@@ -733,9 +712,6 @@ body {
   text-align: left;
 }
 
-/* ===========================
-   TESTIMONIALS
-   =========================== */
 
 #testimonials.testimonials-section {
   position: relative;
@@ -898,9 +874,6 @@ body {
   display: none !important;
 }
 
-/* ===========================
-   BLOG
-   =========================== */
 
 .home-blog {
   background: #ffffff;
@@ -1057,9 +1030,6 @@ body {
   color: #28509e;
 }
 
-/* ===========================
-   CONTACT CTA
-   =========================== */
 
 .home-contact-cta {
   background-color: #28509e;
@@ -1155,9 +1125,6 @@ body {
   margin: 0;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
 
 .site-footer {
   background: #28509e;
@@ -1229,9 +1196,6 @@ body {
   color: #ff8e26;
 }
 
-/* ===========================
-   GENERIC RESPONSIVE
-   =========================== */
 
 @media (max-width: 992px) {
   .top-center-info {
@@ -1401,12 +1365,8 @@ body {
   }
 }
 
-/* ==========================================
-   MOBILE HEADER + FULLSCREEN MENU (≤992px)
-   ========================================== */
 
 @media (max-width: 992px) {
-  /* header row like screenshot */
   .top-header {
     height: 62px;
     background: #28509e;
@@ -1447,7 +1407,6 @@ body {
     margin-left: 4px;
   }
 
-  /* hamburger icon */
   .nav-toggle {
     display: flex;
     flex-direction: column;
@@ -1465,7 +1424,6 @@ body {
     border-radius: 2px;
   }
 
-  /* body class to open mobile menu */
   body.menu-open {
     overflow: hidden;
   }
@@ -1508,11 +1466,8 @@ body {
     color: #ff8a00;
   }
 }
-/* ============================================================
-   BLOG PAGE — HERO TITLE + TOP IMAGE
-============================================================ */
 .blog-title-section {
-    background: #28509E; /* deep blue like screenshot */
+    background: #28509E; 
     padding: 60px 0 40px;
     text-align: left;
 }
@@ -1529,7 +1484,6 @@ body {
     text-transform: uppercase;
 }
 
-/* TOP ARTICLE IMAGE */
 .blog-post-image {
     width: 100%;
     height: 420px;
@@ -1537,9 +1491,6 @@ body {
     display: block;
 }
 
-/* ============================================================
-   BLOG POST CONTENT
-============================================================ */
 .blog-post-wrapper {
     width: 80%;
     max-width: 1300px;
@@ -1548,7 +1499,6 @@ body {
     gap: 40px;
 }
 
-/* LEFT COLUMN — MAIN ARTICLE */
 .blog-post-content {
     width: 70%;
 }
@@ -1567,7 +1517,6 @@ body {
     color: #333;
 }
 
-/* Small icon next to subsection titles */
 .post-icon-title {
     display: flex;
     align-items: center;
@@ -1578,9 +1527,6 @@ body {
     width: 28px;
 }
 
-/* ============================================================
-   RIGHT COLUMN — RELATED SHORT LINKS
-============================================================ */
 .blog-right-links {
     width: 30%;
     padding-top: 20px;
@@ -1618,9 +1564,6 @@ body {
     text-decoration: underline;
 }
 
-/* ============================================================
-   NEWSLETTER SECTION
-============================================================ */
 .newsletter-section {
     background: #28509E;
     color: white;
@@ -1661,9 +1604,6 @@ body {
     text-transform: uppercase;
 }
 
-/* ============================================================
-   OTHER ARTICLES SECTION
-============================================================ */
 .other-articles-section {
     width: 80%;
     max-width: 1300px;
@@ -1684,7 +1624,6 @@ body {
     gap: 28px;
 }
 
-/* CARDS */
 .other-article-card {
     background: #fff;
     border-radius: 12px;
@@ -1751,9 +1690,6 @@ body {
     text-decoration: underline;
 }
 
-/* ============================================================
-   RESPONSIVE ADJUSTMENTS
-============================================================ */
 @media (max-width: 1100px) {
     .blog-post-wrapper {
         flex-direction: column;
@@ -1780,13 +1716,8 @@ body {
         width: 80%;
     }
 }
-/* ============================================
-   UNIVERSAL MOBILE HEADER FIX
-   ============================================ */
-
 @media (max-width: 992px) {
 
-    /* Force visible top blue bar on ALL pages */
     .top-header {
         background-color: #214f9b !important;
         position: relative;
@@ -1798,14 +1729,12 @@ body {
         justify-content: space-between !important;
     }
 
-    /* Restore real logo, centered better */
     .top-logo .site-logo {
         width: 90px !important;
         height: auto;
-        margin-left: 0 !important; /* STOP PUSHING IT LEFT */
+        margin-left: 0 !important; 
     }
 
-    /* SHOW BURGER ICON ALWAYS */
     .nav-toggle {
         display: flex !important;
         flex-direction: column;
@@ -1815,7 +1744,6 @@ body {
         z-index: 4000;
     }
 
-    /* BURGER STYLE EXACTLY LIKE PRODUCTS PAGE */
     .nav-toggle span {
         width: 26px;
         height: 3px;
@@ -1823,22 +1751,18 @@ body {
         border-radius: 2px;
     }
 
-    /* Ensure floating nav does NOT hide the burger */
     .main-nav {
-        position: static;  /* mobile only */
+        position: static;  
         background: #214f9b !important;
         padding: 8px 0 !important;
         z-index: 2000;
     }
 
-    /* Hide desktop nav links */
     .nav-links {
         display: none !important;
     }
 }
-/* ============================================
-   GLOBAL RESET
-============================================ */
+
 *,
 *::before,
 *::after {
@@ -1859,9 +1783,6 @@ body {
     margin: 0 auto;
 }
 
-/* ============================================
-   TOP BLUE HEADER BAR
-============================================ */
 .top-header {
     width: 100%;
     height: 78px;
@@ -1877,15 +1798,13 @@ body {
     justify-content: space-between;
 }
 
-/* LOGO */
 .top-logo .site-logo {
     width: 105px;
     height: auto;
     object-fit: contain;
-    margin-left: -90px; /* matches home */
+    margin-left: -90px; 
 }
 
-/* CENTER INFO (desktop) */
 .top-center-info {
     display: flex;
     align-items: center;
@@ -1900,14 +1819,12 @@ body {
     margin-right: 6px;
 }
 
-/* RIGHT GROUP */
 .top-right-group {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-/* SOCIALS */
 .top-socials {
     display: flex;
     align-items: center;
@@ -1919,7 +1836,6 @@ body {
     font-size: 20px;
 }
 
-/* DROPDOWNS */
 .top-dropdowns {
     display: flex;
     align-items: center;
@@ -1935,18 +1851,14 @@ body {
     color: white;
 }
 
-/* ============================================
-   NAVBAR (DESKTOP)
-============================================ */
 .main-nav {
     width: 100%;
-    background: #1e3f81; /* default — solid for all pages */
+    background: #1e3f81; 
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     z-index: 100;
 }
 
-/* FLOATING NAV ONLY ON HOME PAGE */
 body.home-page .main-nav {
     position: absolute;
     top: 78px;
@@ -1976,7 +1888,6 @@ body.home-page .main-nav {
     padding-bottom: 4px;
 }
 
-/* underline animation */
 .nav-links a::after {
     content: "";
     position: absolute;
@@ -1993,9 +1904,6 @@ body.home-page .main-nav {
     width: 100%;
 }
 
-/* ============================================
-   BURGER BUTTON (VISIBLE on MOBILE)
-============================================ */
 .nav-toggle {
     background: transparent;
     border: none;
@@ -2012,9 +1920,6 @@ body.home-page .main-nav {
     border-radius: 2px;
 }
 
-/* ============================================
-   MOBILE MENU
-============================================ */
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -2069,13 +1974,8 @@ body.home-page .main-nav {
     text-decoration: none;
 }
 
-/* ============================================
-   RESPONSIVE RULES
-============================================ */
-
 @media (max-width: 992px) {
 
-    /* hide desktop elements */
     .top-center-info,
     .top-socials,
     .top-dropdowns,
@@ -2083,35 +1983,26 @@ body.home-page .main-nav {
         display: none;
     }
 
-    /* show burger */
     .nav-toggle {
         display: block;
     }
 
-    /* ensure country + language visible */
     .top-dropdowns {
         display: flex !important;
     }
 
-    /* home-page floating nav becomes solid on mobile */
     body.home-page .main-nav {
         position: relative !important;
         background: #1e3f81 !important;
     }
 }
-/* --------------------------------------
-   FIX: HOME PAGE MUST KEEP FLOATING MENU
-   OTHER PAGES GET THE FIXED BLUE MENU
--------------------------------------- */
 
-/* 1️⃣ Homepage floating navbar (unchanged) */
 body.home-page .main-nav {
     position: absolute !important;
     background: transparent !important;
     top: 78px;
 }
 
-/* 2️⃣ All other pages get fixed blue navbar */
 body:not(.home-page) .main-nav {
     position: fixed !important;
     top: 78px;
@@ -2122,7 +2013,6 @@ body:not(.home-page) .main-nav {
     box-shadow: 0 2px 10px rgba(0,0,0,0.20);
 }
 
-/* Colors for non-home nav */
 body:not(.home-page) .nav-links a {
     color: #ffffff !important;
 }

@@ -1,10 +1,3 @@
-/* ============================================================
-   HOME.CSS — SECTIONS USED ONLY ON HOME PAGE
-============================================================ */
-
-/* ------------------------------------------------------------
-   HERO SLIDER
------------------------------------------------------------- */
 .hero-slider {
     position: relative;
     width: 100%;
@@ -111,9 +104,7 @@
     transform: scale(1.05);
 }
 
-/* ------------------------------------------------------------
-   SERVICES SECTION
------------------------------------------------------------- */
+
 .home-services {
     padding-top: 70px;
 }
@@ -183,14 +174,11 @@
     color: var(--accent);
 }
 
-/* ------------------------------------------------------------
-   HOME ABOUT SECTION
------------------------------------------------------------- */
+
 .home-about {
     width: 100%;
     margin: 0;
 }
-/* Prevent conflicts with About page */
 .home-page .home-about {
     padding: 0;
 }
@@ -239,9 +227,6 @@
     background: #1b3a73;
 }
 
-/* ------------------------------------------------------------
-   CLIENTS SLIDER
------------------------------------------------------------- */
 .clients-slider {
     position: relative;
 }
@@ -263,9 +248,6 @@
     margin: 0 36px;
 }
 
-/* ------------------------------------------------------------
-   WHY CHOOSE US
------------------------------------------------------------- */
 #WhychoseUs {
     padding: 40px 0 80px;
     background-image: url("../images/firstBgSlide.jpg");
@@ -308,9 +290,7 @@
     width: 60px;
 }
 
-/* ------------------------------------------------------------
-   TESTIMONIALS
------------------------------------------------------------- */
+
 #testimonials {
     padding: 80px 0 90px;
     background: #fff;
@@ -344,10 +324,6 @@
     opacity: 1 !important;
 }
 
-
-/* ===========================
-   BLOG
-   =========================== */
 
 .home-blog {
   background: #ffffff;
@@ -504,14 +480,12 @@
   color: #28509e;
 }
 
-/* Desktop: 3 columns */
 @media (min-width: 992px) {
   .blog-grid-achi {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* Tablet: 2 columns */
 @media (min-width: 768px) and (max-width: 991px) {
   .blog-grid-achi {
     grid-template-columns: repeat(2, 1fr);
@@ -519,12 +493,10 @@
 }
 
 
-/* ============================================
-   CONTACT CTA — FINAL VERSION
-   ============================================ */
+
 
 .home-contact-cta {
-    background-color: #28509E;        /* exact blue from screenshot */
+    background-color: #28509E;       
     color: #fff;
     padding: 60px 0 40px;
     margin-top: 120px;
@@ -540,9 +512,7 @@
     gap: 50px;
 }
 
-/* ===========================
-   LEFT SIDE — FORM
-=========================== */
+
 
 .contact-form-wrapper {
     flex: 1 1 60%;
@@ -576,7 +546,6 @@
     color: #e2e6f0;
 }
 
-/* SEND BUTTON */
 .contact-submit {
     margin-top: 15px;
     background: #FF8E26;
@@ -597,9 +566,7 @@
     background: #ff9f33;
 }
 
-/* ===========================
-   RIGHT SIDE — “LET’S TALK!”
-=========================== */
+
 
 .contact-side-heading {
     flex: 0 0 40%;
@@ -617,9 +584,7 @@
     color: #ffffff;
 }
 
-/* ===========================
-   MOBILE
-=========================== */
+
 
 @media (max-width: 900px) {
 
@@ -630,7 +595,7 @@
     }
 
     .contact-side-heading {
-        display: none; /* matches screenshot - hidden on mobile */
+        display: none; 
     }
 
     .contact-form-wrapper {
@@ -638,9 +603,7 @@
     }
 }
 
-/* =============================
-   TESTIMONIALS — FINAL VERSION
-============================== */
+
 
 #testimonials {
     padding: 100px 0;
@@ -656,7 +619,6 @@
     margin-bottom: 60px;
 }
 
-/* ---- SLIDER AREA ---- */
 .testimonials-slider {
     width: 100%;
     overflow: hidden;
@@ -674,7 +636,6 @@
     will-change: transform;
 }
 
-/* ---- 3 cards visible ---- */
 .testimonial-item {
     flex: 0 0 33.333%;
     max-width: 33.333%;
@@ -683,14 +644,12 @@
     transition: all .4s ease;
 }
 
-/* ---- CENTER CARD POP-UP ---- */
 .testimonial-item.center {
     transform: translateY(-35px) scale(1.08);
     opacity: 1;
     z-index: 5;
 }
 
-/* ---- CARD STYLE ---- */
 .testimonial-card {
     background: #ffffff;
     border-radius: 16px;
@@ -729,7 +688,6 @@
     color: #214f9b;
 }
 
-/* ---- DOTS (ONLY ONE ROW) ---- */
 .testi-dots {
     display: flex;
     justify-content: center;
@@ -752,7 +710,6 @@
     background: #ff8a00;
 }
 
-/* MOBILE — only one card */
 @media (max-width: 992px) {
     .testimonial-item {
         flex: 0 0 100%;
@@ -762,9 +719,7 @@
     }
 }
 
-/* ------------------------------------------------------------
-   RESPONSIVE FIXES
------------------------------------------------------------- */
+
 
 @media (max-width: 992px) {
     .services-grid {
@@ -786,13 +741,12 @@
         grid-template-columns: 1fr;
     }
 }
-/* FIX CENTER CARD SIZE & QUOTE VISIBILITY */
 .testimonial-item.center {
     transform: translateY(-25px) scale(1.04);
 }
 
 .testimonial-item .testimonial-card {
-    min-height: 180px; /* reduced */
+    min-height: 180px; 
     padding: 30px 28px 40px;
 }
 
@@ -800,18 +754,15 @@
     padding: 32px 30px 42px;
 }
 
-/* ensure quotation mark remains visible */
 .testimonial-item.center .testimonial-quote-circle {
     opacity: 1 !important;
     transform: scale(1.0);
 }
 
-/* FIX QUOTE POSITION */
 .testimonial-quote-circle {
-    margin: -40px auto 15px; /* lifted up + smaller bottom space */
+    margin: -40px auto 15px; 
 }
 
-/* PREVENT HUGE EMPTY SPACE */
 .testimonial-text {
     line-height: 1.45;
     font-size: 14px;
@@ -829,14 +780,12 @@
 #testimonials {
     padding-top: 140px;
 }
-/* Ensure track stays horizontal */
 .testi-track {
     display: flex;
     gap: 40px;
     will-change: transform;
 }
 
-/* Ensure all slides remain visible for sliding */
 .testimonial-item {
     flex: 0 0 33.333%;
     max-width: 33.333%;
@@ -844,24 +793,20 @@
     transition: transform .4s ease, opacity .4s ease;
 }
 
-/* The CENTER highlighted card */
 .testimonial-item.center {
     transform: translateY(-35px) scale(1.08);
     opacity: 1;
     z-index: 10;
 }
 
-/* Fix quote circles always visible */
 .testimonial-quote-circle {
     background: #fff !important;
     z-index: 9999;
 }
 
-/* Add spacing under title */
 .testimonials-title {
     margin-bottom: 80px !important;
 }
-/* Testimonial arrows */
 .testi-arrow {
     position: absolute;
     top: 50%;
@@ -874,13 +819,12 @@
     height: 40px;
     border-radius: 50%;
     font-size: 22px;
-    display: none; /* hidden by default */
+    display: none; 
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-/* Show arrows ONLY on mobile */
 @media (max-width: 992px) {
     .testi-arrow {
         display: flex;
@@ -922,16 +866,13 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-/* ==========================================
-   HOME PAGE — BLOG SECTION (EXACT MATCH)
-========================================== */
+
 
 .home-blog {
     padding: 60px 0 100px;
-    background: #f5f7fb; /* light background like screenshot */
+    background: #f5f7fb; 
 }
 
-/* BLOG title centered */
 .home-blog .blog-title {
     text-align: center;
     font-family: "Saira Stencil One", sans-serif;
@@ -942,7 +883,6 @@
     margin: 0 0 50px;
 }
 
-/* GRID WITH 3 CARDS */
 .home-blog .blog-grid-achi {
     width: 90%;
     max-width: 1400px;
@@ -952,7 +892,6 @@
     gap: 45px;
 }
 
-/* CARD WRAPPER */
 .home-blog .blog-card-achi {
     position: relative;
     border-radius: 22px;
@@ -961,7 +900,6 @@
     padding-bottom: 0;
 }
 
-/* IMAGE */
 .home-blog .blog-image {
     width: 100%;
     height: 360px;
@@ -970,7 +908,6 @@
     border-radius: 22px;
 }
 
-/* DATE BADGE */
 .home-blog .blog-date-badge {
     position: absolute;
     top: 22px;
@@ -996,7 +933,6 @@
     margin-top: 2px;
 }
 
-/* TITLE BELOW IMAGE */
 .home-blog .blog-card-title {
     text-align: center;
     font-family: "Saira", sans-serif;
@@ -1006,7 +942,6 @@
     margin: 14px 0 0;
 }
 
-/* READ MORE LINK */
 .home-blog .blog-readmore-btn {
     font-family: "Saira", sans-serif;
     font-weight: 600;
@@ -1020,7 +955,6 @@
     color: #ff8a00;
 }
 
-/* READ ALL BUTTON */
 .home-blog .blog-readall-wrapper {
     text-align: center;
     margin-top: 60px;
@@ -1045,32 +979,29 @@
     background: #ff8a00;
 }
 
-/* RESPONSIVE */
 @media (max-width: 992px) {
     .home-blog .blog-grid-achi {
         grid-template-columns: 1fr;
         max-width: 600px;
     }
 }
-/* BLOG CARD — make the container relative so the date can sit on top */
 .home-blog .blog-card-achi {
     position: relative;
     border-radius: 10px;  
-    margin-top: 10px;;    /* match your card corners */
+    margin-top: 10px;;   
     overflow: hidden;
     gap:20px
 }
 
-/* DATE BADGE — bigger, less rounded, exact top-left corner */
 .home-blog .blog-date-badge {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80px;              /* make it bigger */
-    height: 80px;             /* perfect square */
-    background: #214F9B;      /* your blue */
+    width: 80px;             
+    height: 80px;             
+    background: #214F9B;      
     color: white;
-    border-radius: 10px;      /* LESS rounded */
+    border-radius: 10px;      
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1079,7 +1010,6 @@
     z-index: 10;
 }
 
-/* DAY number (bigger + bold like in screenshot) */
 .home-blog .blog-date-badge .day {
     font-size: 26px;
     font-weight: 700;
@@ -1087,46 +1017,40 @@
     line-height: 1;
 }
 
-/* MONTH (smaller spacing) */
 .home-blog .blog-date-badge .month {
     font-size: 17px;
     font-weight: 500;
     margin: 2px 0 0 0;
     line-height: 1;
 }
-/* BLOG SECTION WRAPPER — full width centered */
 .home-blog .blog-container {
     width: 90%;
-    max-width: 1500px;  /* bigger container */
+    max-width: 1500px;  
     margin: 0 auto;
 }
 
-/* BLOG GRID — make cards larger */
 .home-blog .blog-grid-achi {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;                 /* bigger spacing between cards */
+    gap: 50px;                 
     margin-top: 40px;
 }
 
-/* BLOG CARD — BIGGER SIZE */
 .home-blog .blog-card-achi {
     background: #fff;
     border-radius: 20px;
     overflow: hidden;
     position: relative;
     padding-bottom: 20px;
-    height: 600px;             /* INCREASED height to match screenshot */
+    height: 600px;            
 }
 
-/* BLOG IMAGE — bigger & full top area */
 .home-blog .blog-card-achi .blog-image {
     width: 100%;
-    height: 400px;             /* much taller image */
+    height: 400px;            
     object-fit: cover;
 }
 
-/* TITLE BELOW IMAGE — bigger font */
 .home-blog .blog-card-title {
     font-size: 24px;
     font-weight: 700;
@@ -1135,7 +1059,6 @@
     font-family: "Rajdhani", sans-serif;
 }
 
-/* Read More */
 .home-blog .blog-readmore-btn {
     display: inline-block;
     margin: 15px 20px 0 20px;
@@ -1150,7 +1073,6 @@
     text-decoration: underline;
 }
 
-/* DATE BADGE — keep as is (you already like it) */
 .home-blog .blog-date-badge {
     position: absolute;
     top: 0;
@@ -1167,7 +1089,6 @@
     font-family: "Rajdhani", sans-serif;
     z-index: 10;
 }
-/* Image wrapper becomes a perfect centering container */
 .blog-image-wrapper {
     position: relative;
     width: 100%;
@@ -1176,7 +1097,6 @@
     border-radius: 20px;
 }
 
-/* Center the hover button EXACTLY in the middle */
 .blog-hover-btn {
     position: absolute;
     top: 50%;
@@ -1187,7 +1107,6 @@
     transition: opacity .3s ease;
 }
 
-/* Button styling */
 .blog-hover-btn a {
     background: #ff8a00;
     color: #fff;
@@ -1199,7 +1118,6 @@
     font-family: "Rajdhani", sans-serif;
 }
 
-/* Dark overlay on hover */
 .blog-image-overlay {
     position: absolute;
     inset: 0;
@@ -1209,7 +1127,6 @@
     transition: opacity .3s ease;
 }
 
-/* Hover effects */
 .simple-blog-card:hover .blog-hover-btn {
     opacity: 1;
 }
@@ -1223,7 +1140,6 @@
     filter: brightness(0.7);
 }
 
-/* Remove unintended spacing pushing the button down */
 .blog-card-achi {
     padding: 0;
     margin: 0;
@@ -1232,32 +1148,28 @@
     margin: 12px 0;
     padding: 0;
 
-    font-family: "Saira", sans-serif;   /* EXACT font */
-    font-weight: 700;                   /* EXACT weight */
-    font-size: 18px;                    /* EXACT size from inspect */
-    text-transform: capitalize;         /* EXACT style */
+    font-family: "Saira", sans-serif;   
+    font-weight: 700;                   
+    font-size: 18px;                    
+    text-transform: capitalize;       
 
-    color: rgb(0, 58, 128);             /* EXACT blue (#003A80) */
+    color: rgb(0, 58, 128);            
     line-height: 1.4;
     white-space: pre-line;
 
     transition: color .3s cubic-bezier(.4,0,.2,1);
 }
 
-/* Optional hover effect (same rules as inspect) */
 .home-blog .blog-card-title:hover {
-    color: #ff8a00; /* orange on hover – matches your website */
+    color: #ff8a00; 
 }
-/* Reduce extra space inside the card */
 .home-blog .blog-card-achi {
-    padding-bottom: 20px !important;   /* was very large */
+    padding-bottom: 20px !important;   
 }
 
-/* Reduce space under the title inside the card */
 .home-blog .blog-card-title {
     margin-bottom: 10px !important;
 }
-/* Reduce space around the whole section */
 .home-blog {
     padding-top: 20px !important;
     padding-bottom: 20px !important;
@@ -1267,18 +1179,15 @@
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
-/* Reduce extra white space inside the blog card */
 .home-blog .simple-blog-card {
-    padding-bottom: 10px !important;      /* reduce from default 40–60px */
+    padding-bottom: 10px !important;      
 }
 
-/* Reduce space between image and title */
 .home-blog .blog-card-title {
     margin-top: 12px !important;
     margin-bottom: 6px !important;
 }
 
-/* Make the entire card height shrink to content */
 .home-blog .blog-card-achi {
     display: flex;
     flex-direction: column;
@@ -1287,14 +1196,12 @@
 }
 
 
-/* CONTACT CTA */
 .home-contact-cta {
     background-color: #28509e;
     color: #fff;
     margin-top: 100px;
 }
 
-/* Layout */
 .contact-inner {
     display: flex;
     justify-content: space-between;
@@ -1304,7 +1211,6 @@
     margin: 0 auto;
 }
 
-/* LEFT form */
 .contact-form-wrapper {
     flex: 1 1 60%;
 }
@@ -1325,7 +1231,6 @@
     color: #fff;
 }
 
-/* RIGHT SIDE */
 .contact-side-heading {
     flex: 1 1 40%;
     padding-top: 40px;
@@ -1338,7 +1243,6 @@
     margin-bottom: 40px;
 }
 
-/* SEND BUTTON ON RIGHT */
 .contact-send-right {
     margin-top: 10px;
     padding: 12px 50px;
@@ -1354,7 +1258,6 @@
     background: #ffaa44;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .contact-inner {
         flex-direction: column;
@@ -1424,41 +1327,35 @@
     z-index: 10;
 }
 
-/* LEFT ARROW */
 .clients-slider .arrow.prev {
     left: -60px !important;
 }
 
-/* RIGHT ARROW */
 .clients-slider .arrow.next {
     right: -60px !important;
     left: auto !important;
 }
-/* ==========================
-   MOBILE CLIENTS SLIDER FIX
-   One full logo at a time + smooth transition
-========================== */
+
 @media (max-width: 768px) {
 
     .slide-track-wrapper {
-        overflow: hidden;          /* Prevent cut-off logos */
+        overflow: hidden;         
         width: 100%;
     }
 
     .slide-track {
         display: flex;
-        transition: transform 0.6s ease-in-out; /* SMOOTH movement */
+        transition: transform 0.6s ease-in-out; 
     }
 
     .client-logo {
-        min-width: 100%;           /* Show ONLY one logo fully */
+        min-width: 100%;           
         max-width: 100%;
         height: 140px;
         object-fit: contain;
         padding: 20px 0;
     }
 
-    /* BEAUTIFUL mobile arrows */
     .clients-slider .arrow {
         position: absolute;
         top: 50%;

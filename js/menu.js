@@ -3,7 +3,6 @@ function initMobileMenu() {
   const mobileMenu = document.querySelector(".mobile-menu");
   const mobileClose = document.querySelector(".mobile-close");
 
-  // ✔ Correct selector for your menu
   const mobileLinks = document.querySelectorAll(".mobile-menu .nav-links a");
 
   if (!navToggle || !mobileMenu || !mobileClose) {

@@ -1,15 +1,12 @@
-/* ============================================================
-   FOOTER — EXACT MATCH TO SCREENSHOT
-============================================================ */
+
 
 .site-footer {
-    background: #214F9B;         /* same blue in screenshot */
+    background: #214F9B;        
     color: #fff;
     padding: 60px 0 40px;
     font-family: "Saira", sans-serif;
 }
 
-/* GRID LAYOUT */
 .footer-inner {
     max-width: 1250px;
     margin: 0 auto;
@@ -19,14 +16,12 @@
     align-items: flex-start;
 }
 
-/* LOGO */
 .footer-brand img {
     max-width: 170px;
     height: auto;
     display: block;
 }
 
-/* SECTION TITLES */
 .footer-col h4,
 .footer-col .follow-title {
     font-family: "Saira Stencil One", sans-serif;
@@ -35,7 +30,6 @@
     margin-bottom: 18px;
 }
 
-/* LINKS */
 .footer-col ul {
     list-style: none;
     padding: 0;
@@ -57,7 +51,6 @@
     color: #FF8A00;
 }
 
-/* CONTACT LIST */
 .footer-contacts {
     list-style: none;
     padding: 0;
@@ -76,7 +69,6 @@
     font-size: 15px;
 }
 
-/* EMAIL INPUT */
 .footer-email-box {
     width: 100%;
     position: relative;
@@ -109,7 +101,6 @@
     font-size: 16px;
 }
 
-/* SOCIAL ICONS */
 .footer-social {
     margin-top: 14px;
     display: flex;
@@ -126,9 +117,7 @@
     color: #FF8A00;
 }
 
-/* ============================================================
-   RESPONSIVE
-============================================================ */
+
 
 @media (max-width: 1000px) {
     .footer-inner {
@@ -148,20 +137,19 @@
     }
 }
 .footer-contact li i {
-    margin-right: 12px;   /* Increase spacing here */
+    margin-right: 12px;   
     font-size: 16px;
-    width: 20px;          /* Optional: makes icons aligned */
+    width: 20px;          
     display: inline-block;
 }
-/* Apply exact heading style to footer titles */
 .footer-col h4,
 .footer-col .follow-title {
-    font-family: "Saira Stencil One", sans-serif;   /* font-sairaStencil */
-    color: #ffffff;                                 /* text-white */
-    font-weight: 600;                               /* font-[600] */
-    font-size: 20px;                                /* text-[20px] */
+    font-family: "Saira Stencil One", sans-serif;   
+    color: #ffffff;                                 
+    font-weight: 600;                             
+    font-size: 20px;                              
     text-transform: uppercase;
-    letter-spacing: 1.1px;                          /* tracking-[1.1px] */
+    letter-spacing: 1.1px;                         
     margin-bottom: 18px;
 }
 .footer-quicklinks-grid {

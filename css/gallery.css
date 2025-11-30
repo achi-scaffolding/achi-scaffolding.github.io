@@ -1,14 +1,9 @@
-/* ============================================================
-   GALLERY.CSS — GALLERY PAGE ONLY
-============================================================ */
 
-/* Page wrapper */
 .gallery-page {
     background-color: var(--bg-odd);
     min-height: 100vh;
 }
 
-/* Hero / page title */
 .gallery-hero {
     padding: 70px 0 30px;
     background: linear-gradient(135deg, #003c8f 0%, #28509e 40%, #4e78c5 100%);
@@ -33,13 +28,11 @@
     opacity: 0.9;
 }
 
-/* Gallery section */
 .gallery-section {
     padding: 50px 0 70px;
     background-color: var(--bg-odd);
 }
 
-/* Responsive grid */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -47,7 +40,6 @@
 }
 
 
-/* Each image item */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -56,13 +48,11 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
     cursor: zoom-in;
 
-    /* entry animation */
     opacity: 0;
     transform: translateY(12px) scale(0.98);
     animation: galleryFadeUp 0.6s ease forwards;
 }
 
-/* Slight stagger */
 .gallery-item:nth-child(3n + 1) {
     animation-delay: 0.05s;
 }
@@ -81,7 +71,6 @@
     transition: transform 0.5s ease, filter 0.5s ease;
 }
 
-/* Hover zoom + subtle dark overlay */
 .gallery-item::after {
     content: "";
     position: absolute;
@@ -100,7 +89,6 @@
     opacity: 1;
 }
 
-/* Animation keyframes */
 @keyframes galleryFadeUp {
     to {
         opacity: 1;
@@ -108,14 +96,12 @@
     }
 }
 
-/* -------------------------------
-   LIGHTBOX
--------------------------------- */
+
 
 .lightbox {
     position: fixed;
     inset: 0;
-    display: none;              /* hidden by default */
+    display: none;             
     align-items: center;
     justify-content: center;
     z-index: 2000;
@@ -151,7 +137,6 @@
     object-fit: contain;
 }
 
-/* Close button */
 .lightbox-close {
     position: absolute;
     top: 10px;
@@ -187,9 +172,7 @@
     }
 }
 
-/* -------------------------------
-   RESPONSIVE
--------------------------------- */
+
 
 
 @media (max-width: 768px) {
@@ -220,7 +203,6 @@
         font-size: 14px;
     }
 }
-/* Responsive */
 @media (max-width: 1024px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -233,7 +215,7 @@
     }
 }
 
-/* PAGE TITLE (exact style like screenshot) */
+
 .gallery-title-section {
     padding-top: 60px;
     padding-bottom: 10px;

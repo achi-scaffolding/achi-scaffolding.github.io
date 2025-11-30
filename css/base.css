@@ -1,9 +1,4 @@
-/* ============================================================
-   BASE.CSS — GLOBAL VARIABLES + RESET + BASICS
-   Used on ALL pages (home + inner pages)
-============================================================ */
 
-/* ---------- CSS VARIABLES ---------- */
 :root {
     --blue-700: #214f9b;
     --blue-800: #274f9f;
@@ -20,7 +15,6 @@
     --max-container: 1200px;
 }
 
-/* ---------- RESET ---------- */
 *,
 *::before,
 *::after {
@@ -29,7 +23,6 @@
     box-sizing: border-box;
 }
 
-/* ---------- BASE BODY STYLE ---------- */
 html, body {
     height: 100%;
 }
@@ -41,14 +34,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* ---------- CONTAINER UTILITY ---------- */
 .container {
     width: 90%;
     max-width: var(--max-container);
     margin: 0 auto;
 }
 
-/* ---------- GENERIC SECTION WRAPPER ---------- */
 .home-section {
     padding: 60px 0;
     background-color: var(--bg-odd);
@@ -58,7 +49,6 @@ body {
     background-color: var(--bg-even);
 }
 
-/* ---------- GENERIC BUTTONS ---------- */
 
 .btn-primary {
     display: inline-block;
@@ -104,7 +94,6 @@ body {
     color: #fff;
 }
 
-/* ---------- GENERIC SECTION HEADERS ---------- */
 .section-header {
     text-align: center;
     max-width: 720px;
@@ -123,9 +112,7 @@ body {
     font-size: 15px;
     color: var(--muted);
 }
-/* ============================================================
-   FLOATING ACTION BUTTONS (GLOBAL — ALL PAGES)
-============================================================ */
+
 
 .floating-btn {
     position: fixed;
@@ -147,19 +134,16 @@ body {
     transform: translateY(-2px);
 }
 
-/* CALL BUTTON */
 .call-btn {
     bottom: 110px;
     background-color: #003c8f;
 }
 
-/* WHATSAPP BUTTON */
 .whatsapp-btn {
     bottom: 40px;
     background-color: #25d366;
 }
 
-/* MOBILE SPACING */
 @media (max-width: 600px) {
     .floating-btn {
         right: 18px;

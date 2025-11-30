@@ -1,12 +1,8 @@
-/* =============================
-   SERVICES – HERO
-   ============================= */
-
 .services-hero {
   position: relative;
   width: 100%;
   height: 420px;
-  background-image: url("../images/HomeBanner12_lossyalpha.webp"); /* replace if you want */
+  background-image: url("../images/HomeBanner12_lossyalpha.webp"); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,9 +63,7 @@
   border-color: #25d366;
 }
 
-/* =============================
-   SERVICES GRID
-   ============================= */
+
 
 .services-section {
   background: #f5f6fb;
@@ -97,7 +91,6 @@
   gap: 30px;
 }
 
-/* Desktop / tablet columns */
 @media (min-width: 768px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -175,9 +168,7 @@
   background: #ffffff;
   color: #003a80;
 }
-/* =========================================
-   WHY US — EXACT MATCH TO THE REAL WEBSITE
-   ========================================= */
+
 
 .whyus-section {
   background: #ffffff;
@@ -195,7 +186,6 @@
   text-align: center;
 }
 
-/* Desktop: 3 columns */
 @media (min-width: 992px) {
   .whyus-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -235,10 +225,6 @@
   margin: 0 auto;
 }
 
-/* =============================
-   RESPONSIVE HERO
-   ============================= */
-
 @media (max-width: 768px) {
   .services-hero {
     height: 520px;
@@ -259,7 +245,6 @@
   }
 }
 
-/* Remove bullets in mobile nav */
 .mobile-nav-links,
 .mobile-nav-links li {
     list-style: none !important;
@@ -267,7 +252,6 @@
     padding: 0;
 }
 
-/* Hide mobile menu on desktop */
 .mobile-menu {
     display: none;
 }

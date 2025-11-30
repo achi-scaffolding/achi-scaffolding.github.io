@@ -1,10 +1,4 @@
-/* ============================================================
-   BLOG.CSS — BLOG LIST + BLOG POST PAGES ONLY
-============================================================ */
 
-/* ------------------------------------------------------------
-   BLOG LIST PAGE — TITLE SECTION
------------------------------------------------------------- */
 .blog-title-section {
     background: #28509E;
     padding: 60px 0 40px;
@@ -23,9 +17,7 @@
     text-transform: uppercase;
 }
 
-/* ------------------------------------------------------------
-   BLOG LIST PAGE — TOP IMAGE
------------------------------------------------------------- */
+
 .blog-post-image {
     width: 100%;
     height: 420px;
@@ -33,9 +25,6 @@
     display: block;
 }
 
-/* ------------------------------------------------------------
-   BLOG POST WRAPPER
------------------------------------------------------------- */
 .blog-post-wrapper {
     width: 80%;
     max-width: 1300px;
@@ -44,7 +33,7 @@
     gap: 40px;
 }
 
-/* LEFT COLUMN — ARTICLE CONTENT */
+
 .blog-post-content {
     width: 70%;
 }
@@ -63,7 +52,6 @@
     color: #333;
 }
 
-/* icon title row */
 .post-icon-title {
     display: flex;
     align-items: center;
@@ -74,9 +62,7 @@
     width: 28px;
 }
 
-/* ------------------------------------------------------------
-   RIGHT COLUMN — RELATED ARTICLES
------------------------------------------------------------- */
+
 .blog-right-links {
     width: 30%;
     padding-top: 20px;
@@ -114,9 +100,7 @@
     text-decoration: underline;
 }
 
-/* ------------------------------------------------------------
-   NEWSLETTER SECTION
------------------------------------------------------------- */
+
 .newsletter-section {
     background: #28509E;
     color: white;
@@ -157,9 +141,7 @@
     text-transform: uppercase;
 }
 
-/* ------------------------------------------------------------
-   OTHER ARTICLES — GRID
------------------------------------------------------------- */
+
 .other-articles-section {
     width: 80%;
     max-width: 1300px;
@@ -180,7 +162,6 @@
     gap: 28px;
 }
 
-/* card */
 .other-article-card {
     background: #fff;
     border-radius: 12px;
@@ -247,9 +228,7 @@
     text-decoration: underline;
 }
 
-/* ------------------------------------------------------------
-   RESPONSIVE ADJUSTMENTS
------------------------------------------------------------- */
+
 @media (max-width: 1100px) {
     .blog-post-wrapper {
         flex-direction: column;
@@ -298,7 +277,6 @@
     position: relative;
 }
 
-/* BLOG PAGE TOP TITLE */
 .blog-header-title {
     width: 100%;
     padding: 50px 0 20px;

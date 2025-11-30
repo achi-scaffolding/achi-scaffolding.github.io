@@ -1,5 +1,4 @@
-// js/why-slider.js
-// Requires jQuery + Slick (included via CDN below in index.html)
+
 $(document).ready(function(){
   $('.why-slider').slick({
     slidesToShow: 3,

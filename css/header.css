@@ -1,14 +1,8 @@
-/* ============================================================
-   HEADER.CSS — TOP HEADER + NAVBAR (HOME + INNER PAGES)
-============================================================ */
 
-/* ------------------------------------------------------------
-   TOP BLUE HEADER BAR (ALL PAGES)
------------------------------------------------------------- */
 .top-header {
     width: 100%;
-    height: auto;                 /* 💛 FIX: No fixed height (prevents cropping) */
-    padding: 12px 0;              /* 💛 Flexible padding */
+    height: auto;                 
+    padding: 12px 0;            
     background: #214f9b;
     display: flex;
     align-items: center;
@@ -19,19 +13,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;              /* 💛 Prevent overflow on mobile */
+    padding: 0 20px;             
 }
 
-/* LOGO */
 .top-logo .site-logo {
-    max-width: 130px;             /* 💛 Responsive size */
+    max-width: 130px;           
     width: 100%;
     height: auto;
     object-fit: contain;
-    margin-left: 0;               /* 💛 Removed negative margin that caused crop */
+    margin-left: 0;              
 }
 
-/* CENTER INFO (desktop only) */
 .top-center-info {
     display: flex;
     align-items: center;
@@ -46,7 +38,6 @@
     margin-right: 6px;
 }
 
-/* RIGHT GROUP */
 .top-right-group {
     display: flex;
     align-items: center;
@@ -77,12 +68,10 @@
     color: white;
 }
 
-/* ------------------------------------------------------------
-   NAVBAR (DESKTOP)
------------------------------------------------------------- */
+
 .main-nav {
     width: 100%;
-    background: #214f9b;   /* MATCH HEADER */
+    background: #214f9b;  
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     position: relative;
     z-index: 100;
@@ -90,13 +79,13 @@
 
 .nav-inner {
     display: flex;
-    justify-content: flex-start;  /* MOVE LEFT */
+    justify-content: flex-start;  
     padding: 14px 0;
 }
 
 .nav-links {
     padding-top:  20px;
-    list-style: none;             /* 💛 Removes bullets */
+    list-style: none;             
     display: flex;
     gap: 36px;
     padding-left:10px;
@@ -115,9 +104,6 @@
 
 
 
-/* ------------------------------------------------------------
-   HOMEPAGE FLOATING NAVBAR
------------------------------------------------------------- */
 body.home-page .main-nav {
     position: absolute !important;
     top: 78px;
@@ -130,27 +116,20 @@ body.home-page .nav-links a {
     color: #ffffff;
 }
 
-/* Allow hover to override on homepage */
 body.home-page .nav-links a:hover,
 body.home-page .nav-links a.active {
     color: #ff8a00 !important;
 }
 
-/* ------------------------------------------------------------
-   INNER PAGES — FIXED BLUE NAVBAR
------------------------------------------------------------- */
 body:not(.home-page) .main-nav {
     position: relative !important;
     top: 0;
-    background: #214f9b !important;   /* SAME BLUE AS HEADER */
+    background: #214f9b !important;  
     border-top: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 
-/* ------------------------------------------------------------
-   BURGER BUTTON (MOBILE)
------------------------------------------------------------- */
 .nav-toggle {
     background: transparent;
     border: none;
@@ -167,9 +146,6 @@ body:not(.home-page) .main-nav {
     border-radius: 2px;
 }
 
-/* ------------------------------------------------------------
-   MOBILE MENU
------------------------------------------------------------- */
 .mobile-menu {
     position: fixed;
     inset: 0;
@@ -179,7 +155,7 @@ body:not(.home-page) .main-nav {
     z-index: 999;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;             /* 💛 Prevents content cutoff */
+    overflow-y: auto;            
 }
 
 .mobile-menu.open {
@@ -193,7 +169,7 @@ body:not(.home-page) .main-nav {
 }
 
 .mobile-logo img {
-    max-width: 120px;             /* 💛 Responsive logo inside menu */
+    max-width: 120px;             
     width: 100%;
     height: auto;
 }
@@ -212,7 +188,6 @@ body:not(.home-page) .main-nav {
     cursor: pointer;
 }
 
-/* CORRECTED — Mobile menu uses mobile-nav-links */
 .mobile-menu .mobile-nav-links {
     padding: 30px;
     list-style: none;
@@ -230,12 +205,8 @@ body:not(.home-page) .main-nav {
 }
 
 
-/* ------------------------------------------------------------
-   RESPONSIVE (≤ 992px)
------------------------------------------------------------- */
 @media (max-width: 992px) {
 
-    /* hide desktop-only elements */
     .top-center-info,
     .top-socials,
     .nav-links {
@@ -251,21 +222,13 @@ body:not(.home-page) .main-nav {
         gap: 14px;
     }
 
-    /* show burger */
     .nav-toggle {
         display: block !important;
     }
-/* 
-    body.home-page .main-nav,
-    body:not(.home-page) .main-nav {
-        position: relative !important;
-        background: #1e3f81 !important;
-        top: 0;
-    } */
+
 }
 
 
-/* Floating nav ONLY on home */
 .floating-nav {
     position: absolute !important;
     top: 78px;
@@ -287,5 +250,5 @@ body:not(.home-page) .main-nav {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #ff8a00;   /* ORANGE HOVER */
+    color: #ff8a00;   
 }

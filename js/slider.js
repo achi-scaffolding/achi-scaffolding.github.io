@@ -1,4 +1,3 @@
-// ================= HERO SLIDER SCRIPT ===================
 
 let currentSlide = 0;
 const slides = document.querySelectorAll(".slide");
@@ -40,7 +39,6 @@ dots.forEach(dot => {
     });
 });
 
-// Auto-slide every 5 seconds
 setInterval(() => {
     if (!slides.length) return;
     let next = (currentSlide + 1) % slides.length;

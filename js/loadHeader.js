@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerContainer = document.getElementById("header");
   if (!headerContainer) return;
 
-  // Detect Github Pages
   const base = window.location.hostname.includes("github.io")
     ? "/Achi_Internship"
     : "";
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(html => {
       headerContainer.innerHTML = html;
 
-      // Now that header is inserted, activate burger menu
       initMobileMenu();
     })
     .catch(err => console.error("Header load failed:", err));
@@ -24,7 +22,6 @@ function initMobileMenu() {
   const mobileMenu = document.querySelector(".mobile-menu");
   const mobileClose = document.querySelector(".mobile-close");
 
-  // FIXED: Select correct links inside mobile menu
   const mobileLinks = document.querySelectorAll(".mobile-menu .nav-links a");
 
   if (!navToggle || !mobileMenu || !mobileClose) return;
@@ -41,7 +38,6 @@ function initMobileMenu() {
     document.body.style.height = "";
   });
 
-  // Close menu when clicking a link
   mobileLinks.forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("open");
