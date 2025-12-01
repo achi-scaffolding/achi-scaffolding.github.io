@@ -1,0 +1,319 @@
+
+.projects-page * {
+    box-sizing: border-box;
+}
+
+
+.projects-hero {
+    width: 100%;
+    height: 520px;   
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.projects-hero-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 35, 90, 0.55); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 70px;
+    text-align: left;
+    backdrop-filter: brightness(0.9);
+}
+
+.projects-hero-overlay h1 {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 48px;
+    color: white;
+    margin: 0;
+}
+
+.projects-whatsapp-btn {
+    display: inline-block;
+    background: #25D366;  
+    color: white;
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    margin-top: 18px;
+    width: auto;
+    max-width: fit-content;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.projects-whatsapp-btn:hover {
+    background: #1EBE5A;
+    transform: translateY(-2px);
+}
+
+
+.projects-main {
+    padding: 50px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.projects-title {
+    text-align: center;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px 22px;
+}
+
+.project-info h3 {
+    font-family: "Rajdhani", sans-serif;
+    color: #214f9b;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.project-info p {
+    font-family: "Open Sans", sans-serif;
+    color: #4a5c7a;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.project-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.tag {
+    background: #eaf2ff;
+    color: #1d4fa2;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Rajdhani", sans-serif;
+}
+
+.view-more {
+    font-family: "Rajdhani", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: #214f9b;
+    text-decoration: none;
+    border: 2px solid #214f9b;
+    padding: 6px 18px;
+    border-radius: 30px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.view-more:hover {
+    background: #214f9b;
+    color: white;
+}
+
+@media (max-width: 900px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.projects-counter-section {
+    background: #f5f7fa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.counter-box-horizontal {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.counter-icon-large {
+    width: 60px;
+    height: auto;
+}
+
+.counter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.1;
+    margin-top: 6px;
+}
+
+.counter-number {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: #103781;
+    margin-left: 10px;
+}
+
+.counter-label {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #103781;
+    margin-top: 4px;
+    letter-spacing: 0.5px;
+}
+
+
+
+.col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 28px;
+}
+
+.mini-title {
+    font-weight: 700;
+    font-family: "Rajdhani", sans-serif;
+    margin-bottom: 6px;
+}
+
+.socials i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+@media (max-width: 900px) {
+    .newsletter-mini-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .newsletter-form-projects {
+        flex-direction: column;
+    }
+}
+
+.newsletter-projects {
+    background: #214f9b;
+    padding: 70px 0;
+    color: #fff;
+}
+
+.newsletter-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.newsletter-title-big {
+    font-family: "Saira Stencil One", sans-serif;
+    font-size: 38px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.newsletter-form input {
+    width: 380px;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.4);
+    background: transparent;
+    color: white;
+    font-size: 15px;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+.newsletter-form button {
+    padding: 14px 34px;
+    background: #ff8a00;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.email{
+    margin-right: 90px;
+}
+.newsletter-form button:hover {
+    background: #e77a00;
+}
+
+@media (max-width: 900px) {
+    .newsletter-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-title-big {
+        font-size: 32px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+.newsletter-divider {
+    width: 100%;
+    height: 1px;
+    background: white; 
+}
