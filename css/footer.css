@@ -175,3 +175,95 @@
     font-size: 18px;
     font-style: bold;
 }
+.footer-social {
+    display: flex;
+    gap: 20px !important;  
+}
+
+.footer-social a {
+    text-decoration: none !important; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    font-size: 20px !important;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: #FF8A00;
+}
+.footer-brand img {
+    margin-left: 100px;   
+    margin-top: 30px;    
+}
+
+
+.site-footer,
+.footer-col ul li a,
+.footer-contacts li,
+.footer-email-box input,
+.footer-quicklinks-grid a {
+    font-size: 20px !important;
+    font-family: "Saira", sans-serif !important;
+}
+
+.footer-email-box input::placeholder {
+    font-size: 20px !important;
+}
+
+
+
+.footer-col h4,
+.footer-col .follow-title {
+    font-family: "Saira Stencil One", sans-serif !important;
+    color: #ffffff;
+    font-weight: 700 !important;
+    font-size: 28px !important;   
+    letter-spacing: 1.3px;
+    margin-bottom: 18px;
+}
+
+
+.footer-contacts i,
+.footer-social a i {
+    font-size: 20px !important;
+}
+
+
+.footer-social {
+    display: flex;
+    gap: 20px !important;
+}
+
+.footer-social a {
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 20px !important;
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+.footer-social a:hover {
+    color: #FF8A00;
+}
+
+.footer-col h4,
+.footer-col .follow-title {
+    font-family: "Saira Stencil One", sans-serif !important;
+    color: #ffffff;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    letter-spacing: 1.3px;
+    margin-bottom: 18px;
+    white-space: nowrap !important;  
+}

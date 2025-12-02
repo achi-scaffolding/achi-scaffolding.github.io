@@ -33,7 +33,7 @@
 
 .slide-content {
     position: absolute;
-    bottom: 20%;
+    bottom: 32%;
     left: 8%;
     max-width: 540px;
     color: #fff;
@@ -1245,7 +1245,7 @@
 
 .contact-send-right {
     margin-top: 10px;
-    padding: 12px 50px;
+   text-align: center;
     font-size: 18px;
     border-radius: 25px;
     background: #FF8A00;
@@ -1439,7 +1439,6 @@
         display: none !important;
     }
 }
-/* Default slider (desktop stays as is) */
 .clients-slider {
     position: relative;
     width: 100%;
@@ -1501,9 +1500,48 @@
     }
 }
 
-/* Hide arrows on desktop */
 @media (min-width: 769px) {
     .clients-slider .arrow {
         display: none;
     }
+}
+#clientsSection {
+    background-color: #ffffff !important;
+}
+#testimonials {
+    background-color: #ffffff !important;
+}
+#WhychoseUs .why-card {
+    margin: 0 24px !important;  
+}
+#WhychoseUs .why-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+
+    height: 330px; 
+    padding: 24px;
+}
+
+#WhychoseUs .why-card p {
+    flex-grow: 1;
+}
+#WhychoseUs .why-card .icon {
+    margin-bottom: 16px;   
+}
+body.home-page .header-separator {
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+}
+
+
+.contact-side-heading h3 {
+    font-family: "Rajdhani", sans-serif !important;
+    font-size: 42px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin: 0 0 12px !important;
+    color: #ffffff !important;
+    letter-spacing: 1px;
 }

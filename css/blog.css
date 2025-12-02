@@ -512,3 +512,66 @@
     color: #FF8A00;
     transform: translateX(4px);
 }
+body.blog-post-page .main-nav {
+    position: relative !important;
+    top: 0 !important;
+    background: #214f9b !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+}
+.blog-hero-section {
+    margin-top: 0 !important;
+    padding-top: 60px !important; 
+}
+
+.blog-hero-title {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center;
+    font-size: 48px; 
+    color: #ffffff;
+    font-family: "Saira Stencil One", sans-serif;
+}
+
+.blog-header-title {
+    display: none !important;
+}
+.details-hero {
+    width: 100%;
+    background: #214f9b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 0 !important;
+}
+
+.hero-left {
+    width: 50%;
+    padding-left: 40px;
+}
+
+.details-title {
+    font-size: 48px;
+    color: white;
+    font-family: "Saira Stencil One", sans-serif;
+    margin-bottom: 20px;
+}
+
+.details-subtitle {
+    font-size: 22px;
+    color: white;
+    font-weight: 600;
+    max-width: 90%;
+}
+
+.hero-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

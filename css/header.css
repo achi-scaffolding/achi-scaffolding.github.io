@@ -309,3 +309,46 @@ body:not(.home-page) .main-nav {
 .mobile-socials :hover{
 color: #ff8a00;
 }
+
+
+body.home-page .main-nav {
+    border-top: none !important;
+}
+.top-header,
+.top-center-info,
+.top-right-group,
+.top-socials a,
+.top-dropdowns,
+.nav-links a {
+    font-family: "Rajdhani", sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+.top-center-info i,
+.top-socials i,
+.dropdown-box i {
+    font-size: 20px !important;
+}
+.top-socials a i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-box {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+.top-socials a,
+.top-socials a:visited,
+.top-socials a:hover,
+.top-socials a:focus {
+    text-decoration: none !important;
+}
+
+
+body:not(.home-page) .main-nav {
+    border-bottom: 1px solid #ffffff !important;
+}
