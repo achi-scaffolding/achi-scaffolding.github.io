@@ -1751,3 +1751,24 @@ body.home-page .header-separator {
 
     line-height: 1.2 !important;
 }
+/* Make the avatar sit higher at the top of the card */
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 5px;   /* reduced from 20px → moves image up */
+}
+
+/* Avatar styling */
+.testimonial-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+    margin-top: -25px;   /* pulls image slightly upward */
+    margin-bottom: 10px;
+}
