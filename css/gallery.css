@@ -241,3 +241,39 @@
     text-align: center !important;
     line-height: 1.2 !important;
 }
+.gallery-pagination {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gallery-page-btn,
+.gallery-page-number {
+  border: 1px solid #d0d7e6;
+  background: #ffffff;
+  color: #1f365c;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: 0.2s ease;
+}
+
+.gallery-page-btn[disabled] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.gallery-page-number.active,
+.gallery-page-number:hover,
+.gallery-page-btn:hover:not([disabled]) {
+  background: #003c8f;
+  color: #ffffff;
+  border-color: #003c8f;
+}

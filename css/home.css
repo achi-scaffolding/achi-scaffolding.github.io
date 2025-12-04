@@ -1791,78 +1791,9 @@ body.home-page .header-separator {
 .home-blog-title {
     margin-bottom: 50px !important;
 }
-.testimonial-rating {
-    font-size: 18px;
-    color: #ffb400; /* gold stars */
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-.testimonial-thumb-wrapper {
-    position: relative;
-    margin-top: 15px;
-}
-
-.testimonial-thumb {
-    width: 100%;
-    border-radius: 10px;
-    height: 160px;
-    object-fit: cover;
-}
-
-.testimonial-viewmore-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0,0,0,0.6);
-    color: #fff;
-    border: none;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Rajdhani", sans-serif;
-    text-transform: uppercase;
-    font-size: 12px;
-    opacity: 0;
-    transition: 0.3s ease;
-}
-
-.testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
-    opacity: 1;
-}
-.testi-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 99999;
-}
-
-.testi-modal-content {
-    background: #fff;
-    padding: 30px;
-    max-width: 700px;
-    width: 90%;
-    border-radius: 12px;
-    overflow-y: auto;
-    max-height: 90vh;
-}
-
-.testi-modal-content img {
-    width: 100%;
-    margin-bottom: 12px;
-    border-radius: 8px;
-}
-
-.testi-modal-close {
-    float: right;
-    cursor: pointer;
-    font-size: 32px;
-    margin-top: -10px;
-    color: #333;
-}
+/* ------------------------------
+   TESTIMONIAL RATING
+--------------------------------*/
 .testimonial-rating {
     font-size: 18px;
     color: #ffb400;
@@ -1870,111 +1801,9 @@ body.home-page .header-separator {
     margin-bottom: 12px;
 }
 
-.testimonial-thumb-wrapper {
-    position: relative;
-    margin-top: 18px;
-}
-
-.testimonial-thumb {
-    width: 100%;
-    height: 170px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.testimonial-viewmore-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.65);
-    color: #ffffff;
-    border: none;
-    padding: 6px 14px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-family: "Rajdhani", sans-serif;
-    font-size: 12px;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 0.25s ease;
-}
-
-.testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
-    opacity: 1;
-}
-
-/* MODAL */
-.testi-modal {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.testi-modal-content {
-    background: #ffffff;
-    max-width: 800px;
-    width: 92%;
-    max-height: 90vh;
-    overflow-y: auto;
-    border-radius: 14px;
-    padding: 28px 26px 30px;
-    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
-}
-
-.testi-modal-close {
-    float: right;
-    font-size: 30px;
-    cursor: pointer;
-    color: #444;
-    margin-top: -8px;
-}
-
-.testi-modal-name {
-    font-family: "Rajdhani", sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 10px 0 4px;
-    color: #003a80;
-}
-
-.testi-modal-rating {
-    color: #ffb400;
-    font-size: 18px;
-    margin-bottom: 16px;
-    letter-spacing: 2px;
-}
-
-.testi-modal-text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    line-height: 1.7;
-    color: #34425c;
-    white-space: pre-line;
-    margin-bottom: 20px;
-}
-
-.testi-modal-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-}
-
-.testi-modal-images img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-@media (min-width: 700px) {
-    .testi-modal-images {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-/* Centered VIEW MORE button */
+/* ------------------------------
+   IMAGE + WRAPPER
+--------------------------------*/
 .testimonial-thumb-wrapper {
     position: relative;
     margin-top: 18px;
@@ -1982,7 +1811,6 @@ body.home-page .header-separator {
     overflow: hidden;
 }
 
-/* The image */
 .testimonial-thumb {
     width: 100%;
     height: 180px;
@@ -1991,47 +1819,189 @@ body.home-page .header-separator {
     transition: transform 0.35s ease;
 }
 
-/* Zoom image slightly on hover */
 .testimonial-thumb-wrapper:hover .testimonial-thumb {
     transform: scale(1.05);
 }
 
-/* VIEW MORE butto
-/* Fade button in on hover */
-.testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.05);
+/* ------------------------------
+   CENTERED "VIEW MORE" BUTTON
+--------------------------------*/
+.testimonials-section .testimonial-viewmore-btn {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    background: rgba(0,0,0,0.55) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.9) !important;
+    border-radius: 3px !important;
+
+    font-family: "Rajdhani", sans-serif !important;
+    text-transform: uppercase !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+
+    padding: 0 !important;       /* 👌 FINAL FIX */
+    height: auto !important;
+    width: auto !important;
+    line-height: 1 !important;
+
+    opacity: 0 !important;
+    cursor: pointer !important;
+    transition: opacity 0.25s ease !important;
 }
 
-.testimonial-viewmore-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* Remove padding inside span (Slick sometimes wraps text) */
+.testimonials-section .testimonial-viewmore-btn span {
+    padding: 1 !important;
+    margin: 1 !important;
+    line-height: 1 !important;
+}
 
-    padding: 2px 2px;          /* MUCH smaller */
-    font-size:9px;            /* smaller text */
-    border-radius: 3px;         /* tiny radius */
+/* Show button on hover */
+.testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
+    opacity: 1 !important;
+}
 
-    background: rgba(0, 0, 0, 0.45);  /* soft, subtle */
-    border: 1px solid #fff;
-    color: #fff;
+/* ------------------------------
+   MODAL
+--------------------------------*/
+.testi-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
 
-    text-transform: uppercase;
-    font-family: "Rajdhani", sans-serif;
-    letter-spacing: 0.5px;
+.testi-modal-content {
+    background: #fff;
+    max-width: 800px;
+    width: 92%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 14px;
+    padding: 28px;
+}
 
+.testi-modal-close {
+    float: right;
     cursor: pointer;
-    opacity: 0;
-    transition: all 0.22s ease;
+    font-size: 32px;
+    color: #333;
 }
+
+.testi-modal-name {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #003a80;
+}
+
+.testi-modal-rating {
+    color: #ffb400;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.testi-modal-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #34425c;
+    white-space: pre-line;
+}
+
+.testi-modal-images {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 700px) {
+    .testi-modal-images {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.testi-modal-images img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.testimonial-thumb { width: 200px; height: 200px;}
+
+/* IMAGE WRAPPER */
+.testimonial-thumb-wrapper {
+    position: relative;
+    margin-top: 18px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* IMAGE */
+.testimonial-thumb {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.35s ease;
+}
+
+/* IMAGE ZOOM ON HOVER */
+.testimonial-thumb-wrapper:hover .testimonial-thumb {
+    transform: scale(1.05);
+}
+
+/* BUTTON – INITIAL STATE (HIDDEN) */
+.testimonials-section .testimonial-viewmore-btn {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: rgba(0,0,0,0.55) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255,255,255,0.85) !important;
+    border-radius: 4px !important;
+
+    font-family: "Rajdhani", sans-serif !important;
+    font-size: 10px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+
+    opacity: 0 !important;                 /* hidden until hover */
+    pointer-events: none !important;       /* prevents accidental clicking before hover */
+    transition: opacity 0.25s ease, transform 0.25s ease, color 0.25s ease !important;
+}
+
+/* REMOVE SLICK-SPAN PADDING */
+.testimonials-section .testimonial-viewmore-btn span {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+
+/* BUTTON APPEARS ONLY ON IMAGE HOVER */
 .testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
-    opacity: 1;
+    opacity: 1 !important;
+    pointer-events: auto !important;        /* clickable only on hover */
+    transform: translate(-50%, -50%) scale(1.05) !important;
 }
 
-.testimonial-viewmore-btn:hover {
-    background: #ff8a00;
-    border-color: #ff8a00;
-    color: #fff;
+/* BUTTON HOVER — ONLY TEXT TURNS ORANGE */
+.testimonials-section .testimonial-viewmore-btn:hover {
+    color: #ff8a00 !important;              /* text becomes orange */
+    border-color: #ff8a00 !important;       /* border becomes orange */
+    background: rgba(0,0,0,0.55) !important; /* same background */
 }
-
+.testimonial-thumb { width: 200px; height: 200px; /* Set the exact height you want */}
