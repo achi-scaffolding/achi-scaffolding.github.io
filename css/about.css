@@ -280,3 +280,15 @@
 #footer .footer-col:nth-child(4) {
     margin-top: -30px !important;
 }
+
+#footer .footer-col h4,
+#footer .footer-col .follow-title {
+    font-size: 28px !important;   /* choose your preferred size */
+}
+.about-title {
+    letter-spacing: 2px !important;
+}
+.section-title.about-title {
+    margin-top: 20px !important;     /* reduce space ABOVE */
+    margin-bottom: 50px !important;  /* increase space BELOW */
+}

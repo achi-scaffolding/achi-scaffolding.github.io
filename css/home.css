@@ -1772,3 +1772,22 @@ body.home-page .header-separator {
     margin-top: -25px;   /* pulls image slightly upward */
     margin-bottom: 10px;
 }
+.home-services-title {
+    margin-top: 10px !important;
+    margin-bottom: 50px !important;
+}
+.home-about .about-panel h2 {
+    letter-spacing: 2px;   /* increase or adjust as you like */
+}
+.home-clients-title {
+    margin-bottom: 45px !important;
+}
+.home-why-title {
+    margin-bottom: 50px !important;
+}
+.testimonials-container > .testimonials-title {
+    margin-bottom: 60px !important;
+}
+.home-blog-title {
+    margin-bottom: 50px !important;
+}

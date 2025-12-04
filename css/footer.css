@@ -434,3 +434,7 @@
 #footer .footer-col:nth-child(4) {
     margin-top: -10px !important;
 }
+.site-footer h4,
+.site-footer .follow-title {
+    font-size: 28px !important;   /* reduce size */
+}

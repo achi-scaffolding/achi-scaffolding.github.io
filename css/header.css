@@ -45,7 +45,7 @@
 
 .top-socials {
     display: flex;
-    gap: 30px;
+    gap: 14px;
 }
 
 .top-socials i {
@@ -351,4 +351,115 @@ body.home-page .main-nav {
 
 body:not(.home-page) .main-nav {
     border-bottom: 1px solid #ffffff !important;
+}
+.header-social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.header-social-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-left: 10px;
+}
+.top-logo {
+    margin-left: -80px;   /* move left more */
+}
+#location{
+    margin-left: 100px;
+}
+.site-logo {
+    width: 110px;     /* adjust here (100px, 120px, 140px…) */
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+.top-header {
+    padding: 22px 0;   /* real site height */
+}
+.top-right-group {
+    margin-left: auto;        /* pushes whole block to the right */
+    display: flex;
+    align-items: center;
+    gap: 120px;                /* spacing between socials and dropdowns */
+}
+.top-dropdowns {
+    margin-left:60 px;        /* extra push after social icons */
+    display: flex;
+    align-items: center;
+    gap: 25px;                /* spacing between Country and English */
+}
+.top-socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;     /* reduce or increase for perfect spacing */
+}
+.top-right-group {
+    display: flex;
+    align-items: center;
+    gap: 60px;    /* spacing between WhatsApp block and social icons */
+}
+/* Make all header SVG/PNG icons exactly 20×20 */
+.header-social-icon,
+.top-center-info img,
+.mobile-socials img,
+.mobile-extra-info img {
+    width: 22px !important;
+    height: 22px !important;
+    object-fit: contain;
+    display: inline-block;
+}
+.header-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+.header-social-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 8px;
+    object-fit: contain;
+}
+.top-center-info {
+    display: flex;
+    align-items: center;
+    gap: 32px;          /* spacing BETWEEN items */
+    margin-left: 50px;  /* spacing AFTER logo */
+}
+.site-logo {
+    height: 70px;     /* was smaller before */
+    width: auto;
+}
+.top-logo {
+    display: flex;
+    align-items: center;
+}
+.top-center-info {
+    margin-left: 70px; /* adjust between 40–70px */
+}
+.main-nav {
+    padding-top: 14px !important;   /* space under the line */
+}
+/* Space under separator line only on HOME PAGE */
+body.home-page .main-nav {
+    padding-top: 14px !important;   /* or 16px if you prefer */
+}
+/* Reduce blue space above menu on non-home pages */
+body:not(.home-page) .main-nav {
+    padding-top: 1px !important;
+    padding-bottom: 4px !important;
 }
