@@ -272,3 +272,21 @@
 .contact-send-right {
     color: #ffffff !important;
 }
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Makes 3 columns, adjust as per design */
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project-gallery .placeholder {
+    background-size: cover; /* Ensure the image covers the placeholder area */
+    background-position: center; /* Ensures the image stays centered */
+    border-radius: 8px;
+    height: 300px; /* Adjust this to your desired height */
+    transition: all 0.3s ease; /* Optional: smooth transition when hovering */
+}
+
+.project-gallery .placeholder:hover {
+    transform: scale(1.05); /* Optional: slight zoom effect on hover */
+}

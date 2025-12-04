@@ -386,7 +386,7 @@ body:not(.home-page) .main-nav {
     max-width: 100%;
 }
 .top-header {
-    padding: 22px 0;   /* real site height */
+    padding: 10px 0;   /* real site height */
 }
 .top-right-group {
     margin-left: auto;        /* pushes whole block to the right */

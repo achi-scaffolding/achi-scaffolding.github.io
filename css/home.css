@@ -1867,3 +1867,14 @@ body.home-page .header-separator {
 .slide-track img {
     flex-shrink: 0;
 }
+.clients-slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #214f9b;
+    cursor: pointer;
+    z-index: 20;
+}
