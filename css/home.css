@@ -227,6 +227,7 @@
     background: #1b3a73;
 }
 
+/* ORIGINAL CLIENTS STYLE – ONLY THIS BLOCK IS USED */
 .clients-slider {
     position: relative;
 }
@@ -1320,190 +1321,7 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 142, 38, 0.4);
 }
-.clients-slider .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
 
-.clients-slider .arrow.prev {
-    left: -60px !important;
-}
-
-.clients-slider .arrow.next {
-    right: -60px !important;
-    left: auto !important;
-}
-
-@media (max-width: 768px) {
-
-    .slide-track-wrapper {
-        overflow: hidden;         
-        width: 100%;
-    }
-
-    .slide-track {
-        display: flex;
-        transition: transform 0.6s ease-in-out; 
-    }
-
-    .client-logo {
-        min-width: 100%;           
-        max-width: 100%;
-        height: 140px;
-        object-fit: contain;
-        padding: 20px 0;
-    }
-
-    .clients-slider .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-
-        border-radius: 50%;
-        background: white;
-        color: #214f9b;
-        font-size: 18px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        border: none;
-        cursor: pointer;
-        z-index: 10;
-
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        transition: all 0.25s ease;
-    }
-
-    .clients-slider .arrow:hover {
-        background: #214f9b;
-        color: white;
-        transform: translateY(-50%) scale(1.15);
-    }
-
-    .clients-slider .arrow.prev { left: 10px; }
-    .clients-slider .arrow.next { right: 10px; }
-}
-@media (max-width: 992px) {
-
-    .home-about .about-layout {
-        display: flex !important;
-        flex-direction: column !important;
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
-
-    .home-about .about-image {
-        width: 100% !important;
-        height: 260px !important;
-        background-size: cover !important;
-        background-position: center !important;
-    }
-
-    .home-about .about-panel {
-        width: 100% !important;
-        padding: 40px 20px !important;
-        background: #214f9b !important;
-        color: white !important;
-        text-align: center !important;
-    }
-
-    .home-about .about-panel h2 {
-        font-size: 30px !important;
-        line-height: 1.3 !important;
-        font-weight: 700 !important;
-        margin-bottom: 18px !important;
-    }
-
-    .home-about .about-panel p {
-        font-size: 17px !important;
-        line-height: 1.6 !important;
-        margin-bottom: 25px !important;
-        color: white !important;
-    }
-
-    .home-about .btn-about {
-        display: inline-block !important;
-        margin: 0 auto !important;
-        padding: 12px 24px !important;
-        font-size: 16px !important;
-    }
-
-    .home-about .about-panel::before,
-    .home-about .about-panel::after {
-        display: none !important;
-    }
-}
-.clients-slider {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.slide-track-wrapper {
-    overflow: hidden;
-}
-
-.slide-track {
-    display: flex;
-    transition: transform .3s ease;
-}
-
-.client-logo {
-    width: 140px;
-    height: auto;
-    object-fit: contain;
-    padding: 10px 16px;
-}
-
-@media (max-width: 768px) {
-
-    .clients-slider .arrow {
-        display: block;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: #214f9b;
-        border: none;
-        color: white;
-        font-size: 28px;
-        width: 42px;
-        height: 42px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-    }
-
-    .clients-slider .arrow.prev {
-        left: 10px;
-    }
-
-    .clients-slider .arrow.next {
-        right: 10px;
-    }
-
-    .client-logo {
-        width: 180px;
-        padding: 10px;
-    }
-
-    .slide-track-wrapper {
-        overflow-x: hidden;
-    }
-}
-
-@media (min-width: 769px) {
-    .clients-slider .arrow {
-        display: none;
-    }
-}
 #clientsSection {
     background-color: #ffffff !important;
 }
@@ -1552,7 +1370,7 @@ body.home-page .header-separator {
     font-weight: 700;
     text-transform: uppercase;
     margin: 0 0 12px;
-    color: #ffffff; /* Use your main blue color instead of white */
+    color: #ffffff; 
     line-height: 1.2;
 }
  
@@ -1575,7 +1393,7 @@ body.home-page .header-separator {
     border-radius: 18px;
     overflow: hidden;
     padding-bottom: 22px;
-    height: auto !important;   /* make card stretch naturally */
+    height: auto !important;   
 }
 
 /* DATE BADGE */
@@ -1629,28 +1447,28 @@ body.home-page .header-separator {
     background: #ffffff !important;
 }
 .home-blog .blog-card-achi {
-    width: 420px;      /* image width + margins */
-    margin: 0 auto;    /* center card */
+    width: 420px;      
+    margin: 0 auto;    
 }
 /* Center grid + equal spacing */
 .home-blog .blog-grid-achi {
     width: 100%;
-    max-width: 1400px;      /* keeps grid centered */
-    margin: 0 auto;         /* centers whole group */
+    max-width: 1400px;      
+    margin: 0 auto;         
     display: flex;
     justify-content: center;
-    gap: 40px;              /* equal spacing between cards */
+    gap: 40px;              
 }
 
 /* Ensure cards do not stretch */
 .home-blog .blog-card-achi {
-    width: 420px;           /* image 400px + 20px side margins */
-    margin: 0;              /* remove uneven auto margins */
+    width: 420px;           
+    margin: 0;              
 }
 /* Tighten space between blog image and title */
 .home-blog .blog-card-achi .blog-image {
     display: block;
-    margin: 0 auto 4px auto !important;  /* only 4px below image */
+    margin: 0 auto 4px auto !important;  
     padding: 0 !important;
 }
 
@@ -1664,8 +1482,8 @@ body.home-page .header-separator {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     margin: 0 0 12px !important;
-    color: #003A80 !important;      /* same as header blue */
-    text-align: center !important;  /* center title */
+    color: #003A80 !important;      
+    text-align: center !important;  
 }
 .home-clients-title {
     font-family: "Rajdhani", sans-serif !important;
@@ -1673,7 +1491,7 @@ body.home-page .header-separator {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     margin: 0 0 12px !important;
-    color: #003A80 !important;   /* same blue as header & services */
+    color: #003A80 !important;   
     text-align: center !important;
 }
 .home-why-title {
@@ -1706,7 +1524,7 @@ body.home-page .header-separator {
     font-weight: 700 !important;
     text-transform: uppercase !important;
     margin: 0 0 12px !important;
-    color: #003A80 !important; /* header blue */
+    color: #003A80 !important; 
     text-align: center !important;
     line-height: 1.2 !important;
 }
@@ -1716,11 +1534,10 @@ body.home-page .header-separator {
     font-weight: 700 !important;
     text-transform: uppercase !important;
 
-    /* 👉 Customize these */
     margin-top: -30px !important;
     margin-bottom: 30px !important;
 
-    color: #003A80 !important; /* header blue */
+    color: #003A80 !important; 
     text-align: center !important;
     line-height: 1.2 !important;
 }
@@ -1730,12 +1547,11 @@ body.home-page .header-separator {
     font-weight: 700 !important;
     text-transform: uppercase !important;
 
-    color: #003A80 !important;   /* same header blue */
+    color: #003A80 !important;   
 
     text-align: center !important;
     line-height: 1.2 !important;
 
-    /* customize spacing */
     margin-top: 40px !important;
     margin-bottom: 25px !important;
 }
@@ -1747,7 +1563,7 @@ body.home-page .header-separator {
 
     margin: 0 0 12px !important;
 
-    color: #ffffff !important; /* white for contact section */
+    color: #ffffff !important; 
 
     line-height: 1.2 !important;
 }
@@ -1758,7 +1574,7 @@ body.home-page .header-separator {
     align-items: center;
     text-align: center;
 
-    padding-top: 5px;   /* reduced from 20px → moves image up */
+    padding-top: 5px;   
 }
 
 /* Avatar styling */
@@ -1769,7 +1585,7 @@ body.home-page .header-separator {
     object-fit: cover;
     object-position: center;
     
-    margin-top: -25px;   /* pulls image slightly upward */
+    margin-top: -25px;   
     margin-bottom: 10px;
 }
 .home-services-title {
@@ -1777,7 +1593,7 @@ body.home-page .header-separator {
     margin-bottom: 50px !important;
 }
 .home-about .about-panel h2 {
-    letter-spacing: 2px;   /* increase or adjust as you like */
+    letter-spacing: 2px;   
 }
 .home-clients-title {
     margin-bottom: 45px !important;
@@ -1843,7 +1659,7 @@ body.home-page .header-separator {
     font-weight: 600 !important;
     letter-spacing: 0.5px !important;
 
-    padding: 0 !important;       /* 👌 FINAL FIX */
+    padding: 0 !important;
     height: auto !important;
     width: auto !important;
     line-height: 1 !important;
@@ -1853,7 +1669,6 @@ body.home-page .header-separator {
     transition: opacity 0.25s ease !important;
 }
 
-/* Remove padding inside span (Slick sometimes wraps text) */
 .testimonials-section .testimonial-viewmore-btn span {
     padding: 1 !important;
     margin: 1 !important;
@@ -1934,9 +1749,12 @@ body.home-page .header-separator {
     border-radius: 10px;
     object-fit: cover;
 }
-.testimonial-thumb { width: 200px; height: 200px;}
 
-/* IMAGE WRAPPER */
+.testimonial-thumb {
+    width: 200px;
+    height: 200px;
+}
+
 .testimonial-thumb-wrapper {
     position: relative;
     margin-top: 18px;
@@ -1944,7 +1762,6 @@ body.home-page .header-separator {
     overflow: hidden;
 }
 
-/* IMAGE */
 .testimonial-thumb {
     width: 100%;
     height: 180px;
@@ -1953,12 +1770,10 @@ body.home-page .header-separator {
     transition: transform 0.35s ease;
 }
 
-/* IMAGE ZOOM ON HOVER */
 .testimonial-thumb-wrapper:hover .testimonial-thumb {
     transform: scale(1.05);
 }
 
-/* BUTTON – INITIAL STATE (HIDDEN) */
 .testimonials-section .testimonial-viewmore-btn {
     position: absolute !important;
     top: 50% !important;
@@ -1979,29 +1794,76 @@ body.home-page .header-separator {
     text-transform: uppercase !important;
     letter-spacing: 0.5px !important;
 
-    opacity: 0 !important;                 /* hidden until hover */
-    pointer-events: none !important;       /* prevents accidental clicking before hover */
+    opacity: 0 !important;
+    pointer-events: none !important;
     transition: opacity 0.25s ease, transform 0.25s ease, color 0.25s ease !important;
 }
 
-/* REMOVE SLICK-SPAN PADDING */
 .testimonials-section .testimonial-viewmore-btn span {
     padding: 0 !important;
     margin: 0 !important;
     line-height: 1 !important;
 }
 
-/* BUTTON APPEARS ONLY ON IMAGE HOVER */
 .testimonial-thumb-wrapper:hover .testimonial-viewmore-btn {
     opacity: 1 !important;
-    pointer-events: auto !important;        /* clickable only on hover */
+    pointer-events: auto !important;
     transform: translate(-50%, -50%) scale(1.05) !important;
 }
 
-/* BUTTON HOVER — ONLY TEXT TURNS ORANGE */
 .testimonials-section .testimonial-viewmore-btn:hover {
-    color: #ff8a00 !important;              /* text becomes orange */
-    border-color: #ff8a00 !important;       /* border becomes orange */
-    background: rgba(0,0,0,0.55) !important; /* same background */
+    color: #ff8a00 !important;
+    border-color: #ff8a00 !important;
+    background: rgba(0,0,0,0.55) !important;
 }
-.testimonial-thumb { width: 200px; height: 200px; /* Set the exact height you want */}
+
+.testimonial-thumb {
+    width: 200px;
+    height: 200px;
+}
+.clients-slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #214f9b;
+    cursor: pointer;
+    z-index: 20;
+}
+
+/* LEFT arrow */
+.clients-slider .arrow.prev {
+    left: -50px !important;   /* adjust as needed */
+}
+
+/* RIGHT arrow */
+.clients-slider .arrow.next {
+    right: -50px !important;  /* adjust as needed */
+}
+.client-logo {
+    width: 160px;          /* uniform width */
+    height: 90px;          /* uniform height */
+    object-fit: contain;   /* keeps proportions */
+    object-position: center;
+    padding: 10px 20px;    /* spacing so logos look aligned */
+    display: block;
+}
+.client-logo {
+    width: 130px;          /* FIXED width  */
+    height: 130px;         /* FIXED height */
+    
+    object-fit: contain;   /* keep full logo visible */
+    object-position: center;
+    
+    background: white;     /* optional: helps visibility */
+    padding: 8px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-track img {
+    flex-shrink: 0;
+}
