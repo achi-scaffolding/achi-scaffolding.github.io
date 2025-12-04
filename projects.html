@@ -7,7 +7,6 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
     <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -42,9 +41,23 @@
                   <span class="tag">Retail</span>
                   <span class="tag">Antelias, Lebanon</span>
               </div>
-              <a href="projects/aishti-mall.html" class="view-more">View More</a>
+              <button class="view-more" data-project="aishti-mall">View More</button>
           </div>
       </article>
+
+      <!-- Modal for AISHTI Mall -->
+      <div class="modal" id="aishti-mall-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>AISHTI Mall</h3>
+              <div class="modal-gallery">
+                  <img src="images/workDone/AISHTI MALL - JAL EL DIB/IMG_2189.JPG" alt="AISHTI Mall Image 1">
+                  <img src="images/workDone/AISHTI MALL - JAL EL DIB/Home Banner 5.JPG" alt="AISHTI Mall Image 2">
+                  <img src="images/workDone/AISHTI MALL - JAL EL DIB/Project-4Platform-1024x768.jpg" alt="AISHTI Mall Image 3">
+                  <img src="images/workDone/AISHTI MALL - JAL EL DIB/scaffolding for indoor spaces.jpg" alt="AISHTI Mall Image 4">
+              </div>
+          </div>
+      </div>
 
       <!-- Port Side Residential Towers -->
       <article class="project-card">
@@ -57,9 +70,21 @@
                   <span class="tag">Residential</span>
                   <span class="tag">Beirut Port, Lebanon</span>
               </div>
-              <a href="project-details.html" class="view-more">View More</a>
+              <button class="view-more" data-project="port-side-residential">View More</button>
           </div>
       </article>
+
+      <!-- Modal for Port Side Residential Towers -->
+      <div class="modal" id="port-side-residential-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>Port Side Residential Towers</h3>
+              <div class="modal-gallery">
+                  <img src="images/workDone/PORT SIDE - BEIRUT/Home Banner 3.jpg" alt="Port Side Project Image 1">
+                  <img src="images/workDone/PORT SIDE - BEIRUT/361641065_768035905323121_6701313797518833287_n.jpg" alt="Port Side Project Image 2">
+              </div>
+          </div>
+      </div>
 
       <!-- Beirut Business Center -->
       <article class="project-card">
@@ -72,9 +97,25 @@
                   <span class="tag">High-Rise</span>
                   <span class="tag">Downtown Beirut, Lebanon</span>
               </div>
-              <a href="project-details.html" class="view-more">View More</a>
+              <button class="view-more" data-project="beirut-business-center">View More</button>
           </div>
       </article>
+
+      <!-- Modal for Beirut Business Center -->
+      <div class="modal" id="beirut-business-center-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>Beirut Business Center</h3>
+              <div class="modal-gallery">
+                  <img src="images/workDone/BEIRUT BUSINESS CENTER - SEN EL FIL/Home banner 2.JPG" alt="Beirut Business Center Image 1">
+                  <img src="images/workDone/BEIRUT BUSINESS CENTER - SEN EL FIL/SDC17893.JPG" alt="Beirut Business Center Image 2">
+                  <img src="images/workDone/BEIRUT BUSINESS CENTER - SEN EL FIL/SDC17893.JPG" alt="Beirut Business Center Image 3">
+                  <img src="images/workDone/BEIRUT BUSINESS CENTER - SEN EL FIL/SDC17899.JPG" alt="Beirut Business Center Image 4">
+
+
+              </div>
+          </div>
+      </div>
 
       <!-- Hotel Le Gray -->
       <article class="project-card">
@@ -87,9 +128,20 @@
                   <span class="tag">Hotel</span>
                   <span class="tag">Beirut, Lebanon</span>
               </div>
-              <a href="project-details.html" class="view-more">View More</a>
+              <button class="view-more" data-project="hotel-le-gray">View More</button>
           </div>
       </article>
+
+      <!-- Modal for Hotel Le Gray -->
+      <div class="modal" id="hotel-le-gray-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>Hotel Le Gray</h3>
+              <div class="modal-gallery">
+                  <img src="images/workDone/HOTEL LE GRAY/IMG_2186.JPG" alt="Hotel Le Gray Image 1">
+              </div>
+          </div>
+      </div>
 
       <!-- Hotel Albergo -->
       <article class="project-card">
@@ -102,9 +154,20 @@
                   <span class="tag">Boutique Hotel</span>
                   <span class="tag">Achrafieh, Beirut, Lebanon</span>
               </div>
-              <a href="project-details.html" class="view-more">View More</a>
+              <button class="view-more" data-project="hotel-albergo">View More</button>
           </div>
       </article>
+
+      <!-- Modal for Hotel Albergo -->
+      <div class="modal" id="hotel-albergo-modal">
+          <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>Hotel Albergo</h3>
+              <div class="modal-gallery">
+                  <img src="images/workDone/HOTEL ALBERGO/IMG_2197.JPG" alt="Hotel Albergo Image 1">
+              </div>
+          </div>
+      </div>
 
   </div>
 </section>
@@ -137,6 +200,39 @@
 
 <script src="js/loadHeader.js"></script>
 <script src="js/loadFooter.js"></script>
+
+<script>
+    // Open and Close Modal
+    const viewMoreBtns = document.querySelectorAll('.view-more');
+    const modals = document.querySelectorAll('.modal');
+    const closeBtns = document.querySelectorAll('.close-btn');
+
+    // Open the modal when the "View More" button is clicked
+    viewMoreBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const projectId = btn.getAttribute('data-project');
+            const modal = document.getElementById(`${projectId}-modal`);
+            modal.style.display = 'block';
+        });
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtns.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            const modal = closeBtn.closest('.modal');
+            modal.style.display = 'none';
+        });
+    });
+
+    // Close the modal if user clicks outside of the modal
+    window.addEventListener('click', (event) => {
+        modals.forEach(modal => {
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
