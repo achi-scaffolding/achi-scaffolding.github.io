@@ -455,11 +455,86 @@ body:not(.home-page) .main-nav {
     padding-top: 14px !important;   /* space under the line */
 }
 /* Space under separator line only on HOME PAGE */
-body.home-page .main-nav {
-    padding-top: 14px !important;   /* or 16px if you prefer */
-}
+
 /* Reduce blue space above menu on non-home pages */
 body:not(.home-page) .main-nav {
     padding-top: 1px !important;
     padding-bottom: 4px !important;
+}
+/* ---------------------------
+   HOME PAGE – header must scroll
+   (menu floats over hero but is NOT fixed)
+----------------------------*/
+
+/* Make sure the whole header block is not fixed */
+body.home-page #header {
+    position: static !important;
+}
+
+/* Top blue strip behaves normally */
+body.home-page .top-header {
+    position: relative !important;
+}
+
+/* Nav floats over hero, but scrolls with page */
+body.home-page .main-nav {
+    position: absolute !important;  /* overlays hero */
+    top: 78px;                      /* adjust if needed */
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    border-top: none;
+}
+/* ===============================
+   PERFECT RESPONSIVE LOGO FIX
+   =============================== */
+
+.top-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 0; /* remove the old -80px hack */
+}
+
+.site-logo {
+    width: auto;              /* let image keep proportions */
+    height: 70px;             /* perfect header height */
+    max-height: 70px;         /* prevents overflow */
+    object-fit: contain;      /* NEVER cropped */
+    display: block;
+}
+
+/* MOBILE RESPONSIVE LOGO */
+@media (max-width: 992px) {
+    .site-logo {
+        height: 55px;         /* scale nicely on tablets/mobile */
+        max-height: 55px;
+    }
+}
+
+@media (max-width: 600px) {
+    .site-logo {
+        height: 48px;         /* small screens = perfect size */
+        max-height: 48px;
+    }
+}
+/* Desktop: move logo a bit to the left */
+@media (min-width: 993px) {
+  .top-logo {
+    margin-left: -80px !important; /* adjust: -40px / -60px if you want less */
+  }
+}
+
+/* Tablet + mobile: logo normal, fully visible */
+@media (max-width: 992px) {
+  .top-logo {
+    margin-left: 0 !important;
+  }
+
+  .site-logo {
+    height: 48px;
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+  }
 }

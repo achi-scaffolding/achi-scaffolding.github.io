@@ -1878,3 +1878,24 @@ body.home-page .header-separator {
     cursor: pointer;
     z-index: 20;
 }
+/* ==========================================
+   HOME PAGE HEADER – SCROLL, NOT FIXED
+   ========================================== */
+
+/* Make sure the whole header is not fixed/sticky */
+body.home-page #header {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+
+/* On home: nav floats over hero but scrolls away */
+body.home-page .main-nav {
+    position: absolute !important;
+    top: 78px;              /* adjust if you need a bit up/down */
+    left: 0;
+    width: 100%;
+    background: transparent !important;
+    border-top: none !important;
+    box-shadow: none !important;
+}
