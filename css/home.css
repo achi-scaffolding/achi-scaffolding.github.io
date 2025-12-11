@@ -2167,3 +2167,106 @@ body.home-page .main-nav {
       text-align: center;
   }
 }
+/* MOBILE — Increase hero slider height */
+@media (max-width: 768px) {
+
+    .hero-slider {
+        height: 80vh !important; /* Increase height (you can change to 85vh / 90vh) */
+    }
+
+    .slider-container {
+        height: 80vh !important;
+    }
+
+    .slide {
+        height: 80vh !important;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* Optional: center content vertically better */
+    .slide-content {
+        padding-top: 20vh; /* Move text lower or higher */
+    }
+}
+/* ============================
+   HERO – REMOVE DARK BAND ON MOBILE
+   ============================ */
+
+/* Mobile: no dark background behind the text */
+@media (max-width: 768px) {
+  .hero-slider .slide-content {
+    background: none !important;
+    background-image: none !important;
+  }
+}
+
+/* Desktop: keep a nice gradient behind the text area */
+@media (min-width: 769px) {
+  .hero-slider .slide-content {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.75) 0%,
+      rgba(0, 0, 0, 0.45) 35%,
+      transparent 80%
+    );
+  }
+}
+/* ============================
+   HERO MOBILE BUTTON FIXES
+   ============================ */
+@media (max-width: 768px) {
+
+    /* Bigger hero title */
+    .hero-slider .slide-content h1 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+    }
+
+    /* Smaller subtitle */
+    .hero-slider .slide-content p {
+        font-size: 15px !important;
+        margin-bottom: 18px;
+        ;
+    }
+
+    /* WhatsApp button — smaller + clean text */
+    .hero-slider .enquiry-btn {
+        padding: 10px 18px !important;
+        font-size: 15px !important;
+        text-transform: none !important; /* remove uppercase */
+        border-radius: 16px !important;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        width: auto !important;
+    }
+
+    /* Change the button’s text */
+    .hero-slider .enquiry-btn span {
+        display: inline-block !important;
+        font-size: 15px !important;
+        text-transform: none !important;
+    }
+
+    /* Remove ONLY the “over WhatsApp” part */
+    .hero-slider .enquiry-btn span::after {
+        content: "Send us your enquiry";
+    }
+
+    /* Hide original long text completely */
+    .hero-slider .enquiry-btn span {
+        font-size: 0 !important;
+    }
+
+    /* Insert new clean text */
+    .hero-slider .enquiry-btn span::after {
+        font-size: 15px !important;
+        content: "Send us your enquiry";
+    }
+
+    /* Icon size */
+    .hero-slider .enquiry-btn i {
+        font-size: 18px !important;
+    }
+}
