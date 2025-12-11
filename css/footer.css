@@ -458,9 +458,7 @@
   }
 
   .site-footer .footer-brand .site-logo {
-      max-width: 140px;
-      height: auto;
-      margin-bottom: 30px;
+   display: none;
   }
 
   /* Our Contacts */
