@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/service-details.css">
 </head>
@@ -44,9 +45,38 @@
                 </div>
             </div>
         </section>
-    </main>
+   </main>
 
-    <div id="footer"></div>
+<section id="contactForm" class="home-contact-cta">
+    <div class="contact-inner">
+
+        <!-- LEFT SIDE — FORM -->
+        <div class="contact-form-wrapper">
+            <form class="contact-form">
+                <input id="name" name="name" type="text" placeholder="Name">
+                <input id="email" name="email" type="email" placeholder="Email">
+                <input id="phone" name="phone" type="text" placeholder="Phone">
+                <textarea id="message" name="message" rows="5" placeholder="Write something..."></textarea>
+            </form>
+        </div>
+
+        <!-- RIGHT SIDE — TITLE + BUTTON -->
+        <div class="contact-side-heading">
+            <h3 class="contact-title">LET’S TALK!</h3>
+
+            <button type="submit" class="contact-submit contact-send-right">
+                SEND
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<div class="contact-footer-separator"></div>
+
+<div id="footer"></div>
+
 
     <script src="js/loadHeader.js" defer></script>
     <script src="js/menu.js" defer></script>
