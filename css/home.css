@@ -2049,10 +2049,7 @@ body.home-page .main-nav {
         text-transform: none !important;
     }
 
-    /* Remove ONLY the “over WhatsApp” part */
-    .hero-slider .enquiry-btn span::after {
-        content: "Send us your enquiry";
-    }
+   
 
     /* Hide original long text completely */
     .hero-slider .enquiry-btn span {
@@ -2062,7 +2059,7 @@ body.home-page .main-nav {
     /* Insert new clean text */
     .hero-slider .enquiry-btn span::after {
         font-size: 15px !important;
-        content: "Send us your enquiry";
+        content: "Send us your enquiry over Whatsapp";
     }
 
     /* Icon size */
@@ -2425,5 +2422,13 @@ body.home-page .main-nav {
     .blog-readall-btn:active {
         background: #ff8a00;
         transform: scale(0.96);
+    }
+}
+@media (max-width: 768px) {
+    .hero-slider .slide-content {
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding: 16px 20px;
+        border-radius: 10px;
+        margin-right: 30px;
     }
 }
