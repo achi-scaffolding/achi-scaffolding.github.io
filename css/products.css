@@ -303,3 +303,25 @@
         align-items: flex-start;
     }
 }
+@media (max-width: 1024px) {
+  .page-hero {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .page-hero::after {
+    top: 40px;
+    right: -30%;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  body.products-page #header,
+  body.products-page .top-header,
+  body.products-page .main-nav,
+  body.products-page .nav-toggle {
+    position: relative;
+    z-index: 10;
+  }
+}

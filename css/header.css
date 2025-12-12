@@ -623,3 +623,12 @@ body.home-page .main-nav {
     margin-left: -40px; 
   }
 }
+@media (max-width: 1024px) {
+  body.products-page #header,
+  body.products-page .top-header,
+  body.products-page .main-nav,
+  body.products-page .nav-toggle {
+    position: relative;
+    z-index: 1000;
+  }
+}
