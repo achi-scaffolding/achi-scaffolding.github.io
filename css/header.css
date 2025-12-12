@@ -503,38 +503,123 @@ body.home-page .main-nav {
     object-fit: contain;      /* NEVER cropped */
     display: block;
 }
-
-/* MOBILE RESPONSIVE LOGO */
 @media (max-width: 992px) {
-    .site-logo {
-        height: 55px;         /* scale nicely on tablets/mobile */
-        max-height: 55px;
-    }
+  .site-logo {
+    height: 55px;
+    max-height: 55px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .top-logo {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 600px) {
-    .site-logo {
-        height: 48px;         /* small screens = perfect size */
-        max-height: 48px;
-    }
-}
-/* Desktop: move logo a bit to the left */
-@media (min-width: 993px) {
-  .top-logo {
-    margin-left: -80px !important; /* adjust: -40px / -60px if you want less */
-  }
-}
-
-/* Tablet + mobile: logo normal, fully visible */
-@media (max-width: 992px) {
-  .top-logo {
-    margin-left: 0 !important;
-  }
-
   .site-logo {
     height: 48px;
     max-height: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1210px) {
+  .top-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+
+  .top-logo {
+    margin-left: 0;
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .top-logo .site-logo {
+    max-height: 40px;
     width: auto;
-    object-fit: contain;
+    display: block;
+  }
+
+  .top-center-info {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    column-gap: 16px;
+    font-size: 13px;
+  }
+
+  .top-right-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .top-socials {
+    display: none;
+  }
+}
+
+@media (min-width: 1211px) {
+  .top-header-inner {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
+  }
+
+  .top-logo {
+    flex-shrink: 0;
+  }
+
+  .top-center-info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 28px;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-left: 20px;
+  }
+
+  .top-center-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .top-right-group {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-right: 0;
+  }
+
+  .top-socials {
+    display: flex;
+    gap: 14px;
+  }
+
+  .top-dropdowns {
+    display: flex;
+    gap: 18px;
+    padding-left: 10px;
+  }
+}
+/* 1211px → 1310px: small safe shift */
+@media (min-width: 1211px) and (max-width: 1310px) {
+  .top-logo {
+    margin-left: -10px; 
+  }
+}
+
+/* Above 1311px: full desktop left shift */
+@media (min-width: 1311px) {
+  .top-logo {
+    margin-left: -40px; 
   }
 }
