@@ -368,7 +368,7 @@ body.service-details-page .service-details-section {
 
   .service-hero.details-hero .hero-right img {
      width: 100%;
-    height: 260px !important;   /* Increase height here */
+    height: 260px !important;  
     object-fit: cover;
     display: block;
   }

@@ -326,10 +326,9 @@
 
     text-align: left !important;
 
-    /* 👉 Move title up aggressively */
-    margin-top: -40px !important;  /* pull upward */
+    margin-top: -40px !important;  
     position: relative !important;
-    top: -20px !important;          /* pull even more upward */
+    top: -20px !important;        
 
     margin-bottom: 12px !important;
 }
@@ -341,7 +340,7 @@
 
     margin: 0 0 12px !important;
 
-    color: #003A80 !important; /* header blue */
+    color: #003A80 !important; 
     text-align: center !important;
     line-height: 1.2 !important;
 }
@@ -353,7 +352,7 @@
 
     margin: 0 0 12px !important;
 
-    color: #ffffff !important;  /* white CTA title */
+    color: #ffffff !important; 
     line-height: 1.2 !important;
     text-align: center !important;
 }
@@ -367,7 +366,6 @@
     margin-bottom: 10px;
     object-fit: cover;
 }
-/* === PROJECTS MODAL STYLES === */
 
 .modal {
     display: none;
@@ -418,7 +416,6 @@
     color: #000000;
 }
 
-/* Gallery inside the modal */
 .modal-gallery {
     margin-top: 4px;
     padding-right: 8px;
@@ -464,18 +461,16 @@
 }
 @media (max-width: 768px) {
 
-  /* Email input */
   .newsletter-form input.email {
     width: 90% !important;
     margin: 0 auto !important;
     display: block !important;
   }
 
-  /* Button width fix */
   .newsletter-form button {
-    width: 30% !important;         /* << smaller width */
-    max-width: 200px !important;   /* << prevents it from being too wide */
-    margin: 12px auto 0 auto !important; /* center it */
+    width: 30% !important;       
+    max-width: 200px !important; 
+    margin: 12px auto 0 auto !important; 
 
     padding-top:5px !important;
     padding-bottom: 5px !important;

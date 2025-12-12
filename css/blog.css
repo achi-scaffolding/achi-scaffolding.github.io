@@ -583,7 +583,7 @@ body.blog-post-page .main-nav {
 
     margin: 0 0 12px !important;
 
-    color: #ffffff !important; /* header blue */
+    color: #ffffff !important; 
     line-height: 1.2 !important;
 }
 .blog-header-title {
@@ -718,10 +718,7 @@ body.blog-post-page .main-nav {
     font-size: 14px;
   }
 }
-/* ------------------------------
-   BLOG DETAILS — MOBILE/TABLET HERO
-   Matches Services Details Style
---------------------------------*/
+
 @media (max-width: 1024px) {
 
   .details-hero {
@@ -769,7 +766,6 @@ body.blog-post-page .main-nav {
 }
 
 
-/* ---- More compact version for small phones ---- */
 @media (max-width: 600px) {
 
   .details-hero {
@@ -786,16 +782,12 @@ body.blog-post-page .main-nav {
     max-width: 240px;
   }
 }
-/* -------------------------------------------------
-   BLOG DETAILS – Paragraph Spacing & Line Height
---------------------------------------------------*/
 .blog-post-content p {
-    line-height: 1.45 !important;   /* Reduce space between lines */
-    margin-bottom: 22px !important; /* Add space between paragraphs */
-    font-size: 15px;                /* clean reading size */
+    line-height: 1.45 !important;   
+    margin-bottom: 22px !important; 
+    font-size: 15px;               
 }
 
-/* Section titles (h2) spacing improvements */
 .blog-post-content h2 {
     margin-top: 28px !important;
     margin-bottom: 12px !important;
@@ -803,30 +795,28 @@ body.blog-post-page .main-nav {
 }
 @media (max-width: 768px) {
 
-  /* Email input (keep same style, only center it + add margin-left like before) */
   .newsletter-form input {
     width: 90% !important;
-    margin-left: 5% !important; /* same visual effect as centered */
+    margin-left: 5% !important; 
     display: block !important;
   }
   .newsletter-section h2 {
     font-size: 26px !important;
   }
 
-  /* Subscribe button — same style, only reduce width + center + remove huge size */
   .newsletter-form button {
-    width: 40% !important;              /* smaller width */
-    max-width: 190px !important;        /* prevents full width */
+    width: 40% !important;            
+    max-width: 190px !important;        
     margin: 12px auto 0 auto !important;
     
-    padding: 6px 0 !important;          /* reduce padding */
+    padding: 6px 0 !important;         
     height: auto !important;
 
     text-align: center !important;
     letter-spacing: 1px !important;
     font-size: 14px !important;
 
-    border-radius: 600px !important;    /* keep your rounded style */
+    border-radius: 600px !important;   
     display: block !important;
   }
 }

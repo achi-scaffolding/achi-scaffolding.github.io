@@ -157,7 +157,6 @@ body {
         bottom: 36px;
     }
 }
-/* Universal floating button style */
 .floating-btn {
     position: fixed;
     right: 25px;
@@ -172,14 +171,12 @@ body {
     z-index: 9999;
 }
 
-/* Icon inside circle */
 .float-icon {
     width: 50%;
     height: 50%;
     object-fit: contain;
 }
 
-/* PHONE BUTTON (with 90-degree rotation) */
 .call-btn {
     bottom: 120px;
     background: #0A3C78;
@@ -190,19 +187,15 @@ body {
 .call-btn i {
     color: #fff;
     font-size: 28px;
-    transform: rotate(90px);   /* 🔥 EXACT rotation you asked for */
-    display: inline-block;      /* required for rotation */
+    transform: rotate(90px);   
+    display: inline-block;      
     line-height: 1;
 }
 
-
-/* ===============================
-   PHONE ICON (exact rotation)
-   =============================== */
 .call-btn i {
     color: #fff;
     font-size: 28px;
-    transform: rotate(259deg); /* EXACT screenshot angle */
+    transform: rotate(259deg); 
     display: inline-block;
 }
 
@@ -215,7 +208,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* prevents clipping */
+    overflow: hidden; 
 }
 
 .whatsapp-btn img {
@@ -227,9 +220,7 @@ body {
     width: 100%;
     height: 100%;
 }
-/* =====================================
-   WHATSAPP — REAL RADIAL GLOW ANIMATION
-   ===================================== */
+
 .whatsapp-btn {
     position: fixed;
     right: 20px;
@@ -243,11 +234,9 @@ body {
     align-items: center;
     overflow: visible;
     
-    /* Pulse Background Glow */
     animation: whatsappGlow 2.2s infinite ease-in-out;
 }
 
-/* WhatsApp icon stays big */
 .whatsapp-btn img {
     width: 100%;
     height: 100%;
@@ -255,7 +244,6 @@ body {
 }
 
 
-/* Animated radial glow around the button */
 @keyframes whatsappGlow {
     0% {
         box-shadow: 0 0 0px 0px rgba(46, 213, 115, 0.0),
@@ -270,34 +258,26 @@ body {
                     0 0 0px 0px rgba(46, 213, 115, 0.0);
     }
 }
-/* ===========================================
-   GLOBAL SCROLL CONTROL — DESKTOP + MOBILE
-   =========================================== */
 
-/* Allow ONLY vertical scrolling */
 html, body {
-    overflow-x: hidden !important;   /* block horizontal scroll */
-    overflow-y: auto !important;     /* allow vertical scroll */
+    overflow-x: hidden !important;   
+    overflow-y: auto !important;     
     width: 100%;
     max-width: 100%;
     height: 100%;
 }
 
-/* Hide scrollbar visually everywhere (but keep vertical scroll working) */
 
-/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 0 !important;
     height: 0 !important;
 }
 
-/* Firefox */
 html {
     scrollbar-width: none !important;
 }
 
-/* iPhone/Android mobile scrollbars hidden */
 body {
-    -ms-overflow-style: none;    /* IE, old Edge */
-    overflow-y: scroll;          /* force vertical scroll without bar */
+    -ms-overflow-style: none;    
+    overflow-y: scroll;          
 }

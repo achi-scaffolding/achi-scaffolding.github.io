@@ -32,4 +32,4 @@ Commit & push changes to GitHub
 GitHub Pages will auto-update the live version
 
  Live Link
-(https://christa23aoun.github.io/Achi_Internship/)
+https://achi-scaffolding.github.io/

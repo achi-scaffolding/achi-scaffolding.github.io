@@ -374,43 +374,42 @@ body:not(.home-page) .main-nav {
     margin-left: 10px;
 }
 .top-logo {
-    margin-left: -80px;   /* move left more */
+    margin-left: -80px;  
 }
 #location{
     margin-left: 100px;
 }
 .site-logo {
-    width: 110px;     /* adjust here (100px, 120px, 140px…) */
-    height: auto;
+    width: 110px;    
     display: block;
     max-width: 100%;
 }
 .top-header {
-    padding: 10px 0;   /* real site height */
+    padding: 10px 0;  
 }
+
 .top-right-group {
-    margin-left: auto;        /* pushes whole block to the right */
+    margin-left: auto;    
     display: flex;
     align-items: center;
-    gap: 120px;                /* spacing between socials and dropdowns */
+    gap: 120px;              
 }
 .top-dropdowns {
-    margin-left:60 px;        /* extra push after social icons */
+    margin-left:60 px;      
     display: flex;
     align-items: center;
-    gap: 25px;                /* spacing between Country and English */
+    gap: 25px;             
 }
 .top-socials {
     display: flex;
     align-items: center;
-    gap: 14px;     /* reduce or increase for perfect spacing */
+    gap: 14px;   
 }
 .top-right-group {
     display: flex;
     align-items: center;
-    gap: 60px;    /* spacing between WhatsApp block and social icons */
+    gap: 60px;    
 }
-/* Make all header SVG/PNG icons exactly 20×20 */
 .header-social-icon,
 .top-center-info img,
 .mobile-socials img,
@@ -437,11 +436,12 @@ body:not(.home-page) .main-nav {
 .top-center-info {
     display: flex;
     align-items: center;
-    gap: 32px;          /* spacing BETWEEN items */
-    margin-left: 50px;  /* spacing AFTER logo */
+    gap: 32px;         
+    margin-left: 50px; 
 }
+
 .site-logo {
-    height: 70px;     /* was smaller before */
+    height: 70px;    
     width: auto;
 }
 .top-logo {
@@ -449,58 +449,48 @@ body:not(.home-page) .main-nav {
     align-items: center;
 }
 .top-center-info {
-    margin-left: 70px; /* adjust between 40–70px */
+    margin-left: 70px; 
 }
 .main-nav {
-    padding-top: 14px !important;   /* space under the line */
+    padding-top: 14px !important;  
 }
-/* Space under separator line only on HOME PAGE */
 
-/* Reduce blue space above menu on non-home pages */
 body:not(.home-page) .main-nav {
     padding-top: 1px !important;
     padding-bottom: 4px !important;
 }
-/* ---------------------------
-   HOME PAGE – header must scroll
-   (menu floats over hero but is NOT fixed)
-----------------------------*/
 
-/* Make sure the whole header block is not fixed */
+
 body.home-page #header {
     position: static !important;
 }
 
-/* Top blue strip behaves normally */
 body.home-page .top-header {
     position: relative !important;
 }
 
-/* Nav floats over hero, but scrolls with page */
 body.home-page .main-nav {
-    position: absolute !important;  /* overlays hero */
-    top: 78px;                      /* adjust if needed */
+    position: absolute !important;  
+    top: 78px;                   
     left: 0;
     width: 100%;
     background: transparent !important;
     border-top: none;
 }
-/* ===============================
-   PERFECT RESPONSIVE LOGO FIX
-   =============================== */
+
 
 .top-logo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 0; /* remove the old -80px hack */
+    margin-left: 0;
 }
 
 .site-logo {
-    width: auto;              /* let image keep proportions */
-    height: 70px;             /* perfect header height */
-    max-height: 70px;         /* prevents overflow */
-    object-fit: contain;      /* NEVER cropped */
+    width: auto;             
+    height: 70px;            
+    max-height: 70px;         
+    object-fit: contain;     
     display: block;
 }
 @media (max-width: 992px) {
@@ -610,14 +600,12 @@ body.home-page .main-nav {
     padding-left: 10px;
   }
 }
-/* 1211px → 1310px: small safe shift */
 @media (min-width: 1211px) and (max-width: 1310px) {
   .top-logo {
     margin-left: -10px; 
   }
 }
 
-/* Above 1311px: full desktop left shift */
 @media (min-width: 1311px) {
   .top-logo {
     margin-left: -40px; 

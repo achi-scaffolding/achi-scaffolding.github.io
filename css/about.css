@@ -238,16 +238,15 @@
 
 #footer .footer-col h4,
 #footer .footer-col .follow-title {
-    font-size: 28px !important;   /* choose your preferred size */
+    font-size: 28px !important;  
 }
 .about-title {
     letter-spacing: 2px !important;
 }
 .section-title.about-title {
-    margin-top: 20px !important;     /* reduce space ABOVE */
-    margin-bottom: 50px !important;  /* increase space BELOW */
+    margin-top: 20px !important;     
+    margin-bottom: 50px !important;  
 }
-/* Smaller screens */
 @media (max-width: 992px) {
   .about-layout {
     grid-template-columns: 1fr;
@@ -503,13 +502,13 @@
 }
 @media (max-width: 1024px) {
   .card {
-    text-align: left; /* ensure text stays left */
+    text-align: left; 
   }
 
   .card-btn {
     display: block;
-    margin: 16px auto 0 auto !important; /* centers button horizontally */
-    width: fit-content;                   /* prevents full width */
+    margin: 16px auto 0 auto !important; 
+    width: fit-content;                  
   }
 }
 @media (max-width: 768px) {
@@ -530,6 +529,6 @@
   }
 
   .card p {
-    text-align: left; /* keep the text left */
+    text-align: left; 
   }
 }
