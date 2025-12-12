@@ -586,3 +586,247 @@ body.blog-post-page .main-nav {
     color: #ffffff !important; /* header blue */
     line-height: 1.2 !important;
 }
+.blog-header-title {
+    padding: 40px 0 16px;
+    display: block !important;
+}
+
+.blog-header-title h1,
+.blogs-title-main {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    font-family: "Rajdhani", sans-serif !important;
+    font-size: 42px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    margin: 0 0 10px !important;
+    color: #003A80 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+}
+.blog-header-title {
+    padding-top: 40px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.blog-header-title h1 {
+    margin-bottom: 4px !important;
+}
+
+.other-articles-section {
+    padding-top: 40px !important;
+    margin-top: 0 !important;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .details-hero {
+    background-color: #214f9b;
+    padding: 80px 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details-hero .hero-left {
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .details-title {
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+
+  .details-subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #ffffff;
+    max-width: 100%;
+  }
+
+  .details-hero .hero-right {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .details-hero .hero-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
+  .blog-post-wrapper {
+    display: block;
+    padding: 24px 16px 40px;
+  }
+
+  .blog-post-content h2 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+  }
+
+  .blog-post-content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .blog-right-links {
+    margin-top: 32px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e6f0;
+  }
+
+  .newsletter-section {
+    padding: 40px 16px 50px;
+    text-align: center;
+  }
+
+  .newsletter-section h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 18px;
+  }
+
+  .newsletter-section .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .newsletter-section .newsletter-form input[type="email"],
+  .newsletter-section .newsletter-form button {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 15px;
+  }
+
+  .newsletter-section .newsletter-form button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+}
+/* ------------------------------
+   BLOG DETAILS — MOBILE/TABLET HERO
+   Matches Services Details Style
+--------------------------------*/
+@media (max-width: 1024px) {
+
+  .details-hero {
+    background-color: #214f9b;
+    padding: 80px 0 0;
+    display: block;
+    width: 100%;
+  }
+
+  .details-hero .hero-left {
+    width: 100%;
+    padding: 0 20px 24px;
+  }
+
+  .details-title {
+    font-size: 13px;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .details-subtitle {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 1.3;
+    max-width: 260px;
+    margin-top: 10px !important;
+  }
+
+  .details-hero .hero-right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px !important;
+  }
+
+  .details-hero .hero-right img {
+    width: 100%;
+    height: 260px !important;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+
+/* ---- More compact version for small phones ---- */
+@media (max-width: 600px) {
+
+  .details-hero {
+    padding: 70px 0 0;
+  }
+
+  .details-title {
+    font-size: 11px;
+    margin-top: 60px;
+  }
+
+  .details-subtitle {
+    font-size: 20px !important;
+    max-width: 240px;
+  }
+}
+/* -------------------------------------------------
+   BLOG DETAILS – Paragraph Spacing & Line Height
+--------------------------------------------------*/
+.blog-post-content p {
+    line-height: 1.45 !important;   /* Reduce space between lines */
+    margin-bottom: 22px !important; /* Add space between paragraphs */
+    font-size: 15px;                /* clean reading size */
+}
+
+/* Section titles (h2) spacing improvements */
+.blog-post-content h2 {
+    margin-top: 28px !important;
+    margin-bottom: 12px !important;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+
+  /* Email input (keep same style, only center it + add margin-left like before) */
+  .newsletter-form input {
+    width: 90% !important;
+    margin-left: 5% !important; /* same visual effect as centered */
+    display: block !important;
+  }
+  .newsletter-section h2 {
+    font-size: 26px !important;
+  }
+
+  /* Subscribe button — same style, only reduce width + center + remove huge size */
+  .newsletter-form button {
+    width: 40% !important;              /* smaller width */
+    max-width: 190px !important;        /* prevents full width */
+    margin: 12px auto 0 auto !important;
+    
+    padding: 6px 0 !important;          /* reduce padding */
+    height: auto !important;
+
+    text-align: center !important;
+    letter-spacing: 1px !important;
+    font-size: 14px !important;
+
+    border-radius: 600px !important;    /* keep your rounded style */
+    display: block !important;
+  }
+}
